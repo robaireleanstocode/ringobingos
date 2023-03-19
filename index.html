@@ -1,0 +1,3423 @@
+<!DOCTYPE html>
+<html data-n-head-ssr lang="en" translate="no" class="notranslate" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D,%22translate%22:%7B%22ssr%22:%22no%22%7D,%22class%22:%7B%22ssr%22:%22notranslate%22%7D%7D">
+  <head>
+    <title>Mint Ringo Bingo Avatars - NFT Generator</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" name="format-detection" content="telephone=no"><meta data-n-head="ssr" name="google" content="notranslate"><meta data-n-head="ssr" data-hid="description" name="description" content="Mint Ringo Bingo Avatars NFTs - NFT Generator"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="favicons/genfty-favicon.ico"><link data-n-head="ssr" rel="apple-touch-icon" href="favicons/genfty-icon.png"><link data-n-head="ssr" rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous"><link data-n-head="ssr" rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link data-n-head="ssr" rel="preconnect" href="https://mc.yandex.ru" crossorigin="anonymous"><link data-n-head="ssr" rel="preload" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&amp;display=swap" as="style"><link data-n-head="ssr" rel="preload" href="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js" as="script"><link data-n-head="ssr" rel="preload" href="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js" as="script"><link data-n-head="ssr" rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-4QEFG28JX0" as="script"><link data-n-head="ssr" rel="preload" href="https://mc.yandex.ru/metrika/tag.js" as="script"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&amp;display=swap"><script data-n-head="ssr" id="firebase-script" src="js/8.10.0-firebase-app.js" defer sync="true"></script><script data-n-head="ssr" id="firebase-database" src="js/8.10.0-firebase-database.js" defer sync="true"></script><script data-n-head="ssr" id="google-ads" src="https://www.googletagmanager.com/gtag/js?id=G-4QEFG28JX0" defer></script><script data-n-head="ssr">
+        if(location.hostname.endsWith('genfty.com')){
+          // Google Ads
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4QEFG28JX0');
+
+          // Metrika
+          (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          var z = null;m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+          (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+          ym(87001691, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+          });
+        }else{
+          function gtag(a,p){}
+        }
+        </script><script data-n-head="ssr" type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider"></script><script data-n-head="ssr" type="text/javascript" src="https://unpkg.com/web3modal"></script><link rel="preload" href="/_nuxt/608d9f7.js" as="script"><link rel="preload" href="/_nuxt/af9d110.js" as="script"><link rel="preload" href="/_nuxt/b8dccb2.js" as="script"><link rel="preload" href="/_nuxt/15d7c06.js" as="script"><link rel="preload" href="/_nuxt/74d72fc.js" as="script"><link rel="preload" href="/_nuxt/bd3a776.js" as="script"><style data-vue-ssr-id="65b97e00:0 17bc9ac2:0 771aba7f:0">/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com*/
+
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+html {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+  font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+pre {
+  font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/**
+ * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications.
+ */
+
+/**
+ * Removes the default spacing and border for appropriate elements.
+ */
+
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p,
+pre {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Tailwind custom reset styles
+ */
+
+/**
+ * 1. Use the user's configured `sans` font-family (with Tailwind's default
+ *    sans-serif font stack as a fallback) as a sane default.
+ * 2. Use Tailwind's default "normal" line-height so the user isn't forced
+ *    to override it to ensure consistency even when using the default theme.
+ */
+
+html {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  line-height: 1.5; /* 2 */
+}
+
+/**
+ * Inherit font-family and line-height from `html` so users can set them as
+ * a class directly on the `html` element.
+ */
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/**
+ * 1. Prevent padding and border from affecting element width.
+ *
+ *    We used to set this in the html element and inherit from
+ *    the parent element for everything else. This caused issues
+ *    in shadow-dom-enhanced elements like <details> where the content
+ *    is wrapped by a div with box-sizing set to `content-box`.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/4
+ *
+ *
+ * 2. Allow adding a border to an element by just adding a border-width.
+ *
+ *    By default, the way the browser specifies that an element should have no
+ *    border is by setting it's border-style to `none` in the user-agent
+ *    stylesheet.
+ *
+ *    In order to easily add borders to elements by just setting the `border-width`
+ *    property, we change the default border-style for all elements to `solid`, and
+ *    use border-width to hide them instead. This way our `border` utilities only
+ *    need to set the `border-width` property instead of the entire `border`
+ *    shorthand, making our border utilities much more straightforward to compose.
+ *
+ *    https://github.com/tailwindcss/tailwindcss/pull/116
+ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: currentColor; /* 2 */
+}
+
+/*
+ * Ensure horizontal rules are visible by default
+ */
+
+/**
+ * Undo the `border-style: none` reset that Normalize applies to images so that
+ * our `border-{width}` utilities have the expected effect.
+ *
+ * The Normalize reset is unnecessary for us since we default the border-width
+ * to 0 on all elements.
+ *
+ * https://github.com/tailwindcss/tailwindcss/issues/362
+ */
+
+img {
+  border-style: solid;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
+
+table {
+  border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/**
+ * Reset links to optimize for opt-in styling instead of
+ * opt-out.
+ */
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/**
+ * Reset form element properties that are easy to forget to
+ * style explicitly so you don't inadvertently introduce
+ * styles that deviate from your design system. These styles
+ * supplement a partial reset that is already applied by
+ * normalize.css.
+ */
+
+button,
+input,
+select,
+textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+/**
+ * Use the configured 'mono' font family for elements that
+ * are expected to be rendered with a monospace font, falling
+ * back to the system monospace stack if there is no configured
+ * 'mono' font family.
+ */
+
+pre,
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/**
+ * 1. Make replaced elements `display: block` by default as that's
+ *    the behavior you want almost all of the time. Inspired by
+ *    CSS Remedy, with `svg` added as well.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/14
+ * 
+ * 2. Add `vertical-align: middle` to align replaced elements more
+ *    sensibly by default when overriding `display` by adding a
+ *    utility like `inline`.
+ *
+ *    This can trigger a poorly considered linting error in some
+ *    tools but is included by design.
+ * 
+ *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
+ */
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/**
+ * Constrain images and videos to the parent width and preserve
+ * their intrinsic aspect ratio.
+ *
+ * https://github.com/mozdevs/cssremedy/issues/14
+ */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Ensure the default browser behavior of the `hidden` attribute.
+ */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after{
+  --tw-border-opacity:1;
+  border-color:rgba(229, 231, 235, var(--tw-border-opacity));
+}
+
+.container{
+  width:100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width:640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width:768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width:1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width:1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width:1536px;
+  }
+}
+
+.visible{
+  visibility:visible;
+}
+
+.invisible{
+  visibility:hidden;
+}
+
+.fixed{
+  position:fixed;
+}
+
+.absolute{
+  position:absolute;
+}
+
+.relative{
+  position:relative;
+}
+
+.sticky{
+  position:-webkit-sticky;
+  position:sticky;
+}
+
+.inset-0{
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+
+.top-0{
+  top:0px;
+}
+
+.top-1{
+  top:0.25rem;
+}
+
+.top-2{
+  top:0.5rem;
+}
+
+.top-4{
+  top:1rem;
+}
+
+.top-8{
+  top:2rem;
+}
+
+.top-12{
+  top:3rem;
+}
+
+.top-20{
+  top:5rem;
+}
+
+.top-1\.5{
+  top:0.375rem;
+}
+
+.-top-1{
+  top:-0.25rem;
+}
+
+.-top-2{
+  top:-0.5rem;
+}
+
+.top-1\/2{
+  top:50%;
+}
+
+.right-0{
+  right:0px;
+}
+
+.right-1{
+  right:0.25rem;
+}
+
+.right-2{
+  right:0.5rem;
+}
+
+.right-4{
+  right:1rem;
+}
+
+.right-6{
+  right:1.5rem;
+}
+
+.-right-1{
+  right:-0.25rem;
+}
+
+.-right-2{
+  right:-0.5rem;
+}
+
+.bottom-0{
+  bottom:0px;
+}
+
+.bottom-1{
+  bottom:0.25rem;
+}
+
+.bottom-2{
+  bottom:0.5rem;
+}
+
+.bottom-4{
+  bottom:1rem;
+}
+
+.bottom-8{
+  bottom:2rem;
+}
+
+.-bottom-2{
+  bottom:-0.5rem;
+}
+
+.left-0{
+  left:0px;
+}
+
+.left-1{
+  left:0.25rem;
+}
+
+.left-2{
+  left:0.5rem;
+}
+
+.left-4{
+  left:1rem;
+}
+
+.left-8{
+  left:2rem;
+}
+
+.left-1\.5{
+  left:0.375rem;
+}
+
+.-left-2{
+  left:-0.5rem;
+}
+
+.left-1\/2{
+  left:50%;
+}
+
+.z-10{
+  z-index:10;
+}
+
+.z-20{
+  z-index:20;
+}
+
+.z-30{
+  z-index:30;
+}
+
+.z-40{
+  z-index:40;
+}
+
+.z-50{
+  z-index:50;
+}
+
+.float-left{
+  float:left;
+}
+
+.m-0{
+  margin:0px;
+}
+
+.m-1{
+  margin:0.25rem;
+}
+
+.m-2{
+  margin:0.5rem;
+}
+
+.m-auto{
+  margin:auto;
+}
+
+.m-0\.5{
+  margin:0.125rem;
+}
+
+.mx-0{
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.mx-1{
+  margin-left:0.25rem;
+  margin-right:0.25rem;
+}
+
+.mx-2{
+  margin-left:0.5rem;
+  margin-right:0.5rem;
+}
+
+.mx-3{
+  margin-left:0.75rem;
+  margin-right:0.75rem;
+}
+
+.mx-auto{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.mx-0\.5{
+  margin-left:0.125rem;
+  margin-right:0.125rem;
+}
+
+.my-1{
+  margin-top:0.25rem;
+  margin-bottom:0.25rem;
+}
+
+.my-2{
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+}
+
+.my-3{
+  margin-top:0.75rem;
+  margin-bottom:0.75rem;
+}
+
+.my-4{
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+
+.my-5{
+  margin-top:1.25rem;
+  margin-bottom:1.25rem;
+}
+
+.my-6{
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+}
+
+.my-auto{
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+.mt-1{
+  margin-top:0.25rem;
+}
+
+.mt-2{
+  margin-top:0.5rem;
+}
+
+.mt-3{
+  margin-top:0.75rem;
+}
+
+.mt-4{
+  margin-top:1rem;
+}
+
+.mt-6{
+  margin-top:1.5rem;
+}
+
+.mt-14{
+  margin-top:3.5rem;
+}
+
+.mt-28{
+  margin-top:7rem;
+}
+
+.-mt-0{
+  margin-top:0px;
+}
+
+.-mt-1{
+  margin-top:-0.25rem;
+}
+
+.-mt-0\.5{
+  margin-top:-0.125rem;
+}
+
+.mr-1{
+  margin-right:0.25rem;
+}
+
+.mr-2{
+  margin-right:0.5rem;
+}
+
+.mr-8{
+  margin-right:2rem;
+}
+
+.mr-auto{
+  margin-right:auto;
+}
+
+.-mr-0{
+  margin-right:0px;
+}
+
+.-mr-1{
+  margin-right:-0.25rem;
+}
+
+.-mr-0\.5{
+  margin-right:-0.125rem;
+}
+
+.mb-1{
+  margin-bottom:0.25rem;
+}
+
+.mb-2{
+  margin-bottom:0.5rem;
+}
+
+.mb-3{
+  margin-bottom:0.75rem;
+}
+
+.mb-4{
+  margin-bottom:1rem;
+}
+
+.mb-6{
+  margin-bottom:1.5rem;
+}
+
+.mb-8{
+  margin-bottom:2rem;
+}
+
+.mb-10{
+  margin-bottom:2.5rem;
+}
+
+.-mb-1{
+  margin-bottom:-0.25rem;
+}
+
+.ml-1{
+  margin-left:0.25rem;
+}
+
+.ml-3{
+  margin-left:0.75rem;
+}
+
+.ml-4{
+  margin-left:1rem;
+}
+
+.ml-10{
+  margin-left:2.5rem;
+}
+
+.ml-11{
+  margin-left:2.75rem;
+}
+
+.ml-auto{
+  margin-left:auto;
+}
+
+.-ml-1{
+  margin-left:-0.25rem;
+}
+
+.-ml-40{
+  margin-left:-10rem;
+}
+
+.box-border{
+  box-sizing:border-box;
+}
+
+.block{
+  display:block;
+}
+
+.inline-block{
+  display:inline-block;
+}
+
+.inline{
+  display:inline;
+}
+
+.flex{
+  display:flex;
+}
+
+.inline-flex{
+  display:inline-flex;
+}
+
+.table{
+  display:table;
+}
+
+.grid{
+  display:grid;
+}
+
+.contents{
+  display:contents;
+}
+
+.hidden{
+  display:none;
+}
+
+.h-0{
+  height:0px;
+}
+
+.h-1{
+  height:0.25rem;
+}
+
+.h-2{
+  height:0.5rem;
+}
+
+.h-3{
+  height:0.75rem;
+}
+
+.h-4{
+  height:1rem;
+}
+
+.h-5{
+  height:1.25rem;
+}
+
+.h-6{
+  height:1.5rem;
+}
+
+.h-7{
+  height:1.75rem;
+}
+
+.h-8{
+  height:2rem;
+}
+
+.h-10{
+  height:2.5rem;
+}
+
+.h-12{
+  height:3rem;
+}
+
+.h-14{
+  height:3.5rem;
+}
+
+.h-20{
+  height:5rem;
+}
+
+.h-24{
+  height:6rem;
+}
+
+.h-32{
+  height:8rem;
+}
+
+.h-36{
+  height:9rem;
+}
+
+.h-40{
+  height:10rem;
+}
+
+.h-48{
+  height:12rem;
+}
+
+.h-72{
+  height:18rem;
+}
+
+.h-auto{
+  height:auto;
+}
+
+.h-0\.5{
+  height:0.125rem;
+}
+
+.h-full{
+  height:100%;
+}
+
+.h-screen{
+  height:100vh;
+}
+
+.max-h-80{
+  max-height:20rem;
+}
+
+.max-h-full{
+  max-height:100%;
+}
+
+.w-2{
+  width:0.5rem;
+}
+
+.w-3{
+  width:0.75rem;
+}
+
+.w-4{
+  width:1rem;
+}
+
+.w-5{
+  width:1.25rem;
+}
+
+.w-6{
+  width:1.5rem;
+}
+
+.w-7{
+  width:1.75rem;
+}
+
+.w-8{
+  width:2rem;
+}
+
+.w-10{
+  width:2.5rem;
+}
+
+.w-12{
+  width:3rem;
+}
+
+.w-14{
+  width:3.5rem;
+}
+
+.w-16{
+  width:4rem;
+}
+
+.w-20{
+  width:5rem;
+}
+
+.w-24{
+  width:6rem;
+}
+
+.w-28{
+  width:7rem;
+}
+
+.w-32{
+  width:8rem;
+}
+
+.w-36{
+  width:9rem;
+}
+
+.w-40{
+  width:10rem;
+}
+
+.w-48{
+  width:12rem;
+}
+
+.w-60{
+  width:15rem;
+}
+
+.w-64{
+  width:16rem;
+}
+
+.w-72{
+  width:18rem;
+}
+
+.w-80{
+  width:20rem;
+}
+
+.w-auto{
+  width:auto;
+}
+
+.w-1\/2{
+  width:50%;
+}
+
+.w-1\/3{
+  width:33.333333%;
+}
+
+.w-2\/3{
+  width:66.666667%;
+}
+
+.w-full{
+  width:100%;
+}
+
+.w-screen{
+  width:100vw;
+}
+
+.max-w-xs{
+  max-width:20rem;
+}
+
+.max-w-sm{
+  max-width:24rem;
+}
+
+.max-w-lg{
+  max-width:32rem;
+}
+
+.max-w-xl{
+  max-width:36rem;
+}
+
+.max-w-2xl{
+  max-width:42rem;
+}
+
+.max-w-3xl{
+  max-width:48rem;
+}
+
+.max-w-4xl{
+  max-width:56rem;
+}
+
+.max-w-5xl{
+  max-width:64rem;
+}
+
+.max-w-6xl{
+  max-width:72rem;
+}
+
+.max-w-full{
+  max-width:100%;
+}
+
+.flex-1{
+  flex:1 1 0%;
+}
+
+.flex-shrink-0{
+  flex-shrink:0;
+}
+
+.flex-grow{
+  flex-grow:1;
+}
+
+.transform{
+  --tw-translate-x:0;
+  --tw-translate-y:0;
+  --tw-rotate:0;
+  --tw-skew-x:0;
+  --tw-skew-y:0;
+  --tw-scale-x:1;
+  --tw-scale-y:1;
+  transform:translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-1\/2{
+  --tw-translate-x:-50%;
+}
+
+.-translate-y-1\/2{
+  --tw-translate-y:-50%;
+}
+
+.rotate-45{
+  --tw-rotate:45deg;
+}
+
+.rotate-180{
+  --tw-rotate:180deg;
+}
+
+.scale-150{
+  --tw-scale-x:1.5;
+  --tw-scale-y:1.5;
+}
+
+@-webkit-keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@-webkit-keyframes ping{
+  75%, 100%{
+    transform:scale(2);
+    opacity:0;
+  }
+}
+
+@keyframes ping{
+  75%, 100%{
+    transform:scale(2);
+    opacity:0;
+  }
+}
+
+.animate-spin{
+  -webkit-animation:spin 1s linear infinite;
+          animation:spin 1s linear infinite;
+}
+
+.animate-ping{
+  -webkit-animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.cursor-default{
+  cursor:default;
+}
+
+.cursor-pointer{
+  cursor:pointer;
+}
+
+.list-disc{
+  list-style-type:disc;
+}
+
+.list-decimal{
+  list-style-type:decimal;
+}
+
+.appearance-none{
+  -webkit-appearance:none;
+     -moz-appearance:none;
+          appearance:none;
+}
+
+.flex-row{
+  flex-direction:row;
+}
+
+.flex-row-reverse{
+  flex-direction:row-reverse;
+}
+
+.flex-col{
+  flex-direction:column;
+}
+
+.flex-wrap{
+  flex-wrap:wrap;
+}
+
+.items-start{
+  align-items:flex-start;
+}
+
+.items-end{
+  align-items:flex-end;
+}
+
+.items-center{
+  align-items:center;
+}
+
+.justify-start{
+  justify-content:flex-start;
+}
+
+.justify-end{
+  justify-content:flex-end;
+}
+
+.justify-center{
+  justify-content:center;
+}
+
+.justify-between{
+  justify-content:space-between;
+}
+
+.overflow-auto{
+  overflow:auto;
+}
+
+.overflow-hidden{
+  overflow:hidden;
+}
+
+.overflow-y-auto{
+  overflow-y:auto;
+}
+
+.overflow-x-scroll{
+  overflow-x:scroll;
+}
+
+.truncate{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.whitespace-nowrap{
+  white-space:nowrap;
+}
+
+.break-words{
+  overflow-wrap:break-word;
+}
+
+.break-all{
+  word-break:break-all;
+}
+
+.rounded{
+  border-radius:0.25rem;
+}
+
+.rounded-md{
+  border-radius:0.375rem;
+}
+
+.rounded-lg{
+  border-radius:0.5rem;
+}
+
+.rounded-xl{
+  border-radius:0.75rem;
+}
+
+.rounded-full{
+  border-radius:9999px;
+}
+
+.rounded-t-md{
+  border-top-left-radius:0.375rem;
+  border-top-right-radius:0.375rem;
+}
+
+.rounded-t-xl{
+  border-top-left-radius:0.75rem;
+  border-top-right-radius:0.75rem;
+}
+
+.rounded-r-md{
+  border-top-right-radius:0.375rem;
+  border-bottom-right-radius:0.375rem;
+}
+
+.rounded-r-full{
+  border-top-right-radius:9999px;
+  border-bottom-right-radius:9999px;
+}
+
+.rounded-b-md{
+  border-bottom-right-radius:0.375rem;
+  border-bottom-left-radius:0.375rem;
+}
+
+.rounded-l-md{
+  border-top-left-radius:0.375rem;
+  border-bottom-left-radius:0.375rem;
+}
+
+.rounded-l-full{
+  border-top-left-radius:9999px;
+  border-bottom-left-radius:9999px;
+}
+
+.border-0{
+  border-width:0px;
+}
+
+.border-2{
+  border-width:2px;
+}
+
+.border-4{
+  border-width:4px;
+}
+
+.border{
+  border-width:1px;
+}
+
+.border-t{
+  border-top-width:1px;
+}
+
+.border-r{
+  border-right-width:1px;
+}
+
+.border-b-8{
+  border-bottom-width:8px;
+}
+
+.border-b{
+  border-bottom-width:1px;
+}
+
+.border-l{
+  border-left-width:1px;
+}
+
+.border-dotted{
+  border-style:dotted;
+}
+
+.border-current{
+  border-color:currentColor;
+}
+
+.border-white{
+  --tw-border-opacity:1;
+  border-color:rgba(255, 255, 255, var(--tw-border-opacity));
+}
+
+.border-gray-100{
+  --tw-border-opacity:1;
+  border-color:rgba(243, 244, 246, var(--tw-border-opacity));
+}
+
+.border-gray-200{
+  --tw-border-opacity:1;
+  border-color:rgba(229, 231, 235, var(--tw-border-opacity));
+}
+
+.border-gray-300{
+  --tw-border-opacity:1;
+  border-color:rgba(209, 213, 219, var(--tw-border-opacity));
+}
+
+.border-gray-400{
+  --tw-border-opacity:1;
+  border-color:rgba(156, 163, 175, var(--tw-border-opacity));
+}
+
+.border-gray-600{
+  --tw-border-opacity:1;
+  border-color:rgba(75, 85, 99, var(--tw-border-opacity));
+}
+
+.border-gray-700{
+  --tw-border-opacity:1;
+  border-color:rgba(55, 65, 81, var(--tw-border-opacity));
+}
+
+.border-gray-800{
+  --tw-border-opacity:1;
+  border-color:rgba(31, 41, 55, var(--tw-border-opacity));
+}
+
+.border-red-200{
+  --tw-border-opacity:1;
+  border-color:rgba(254, 202, 202, var(--tw-border-opacity));
+}
+
+.border-red-600{
+  --tw-border-opacity:1;
+  border-color:rgba(220, 38, 38, var(--tw-border-opacity));
+}
+
+.border-yellow-600{
+  --tw-border-opacity:1;
+  border-color:rgba(217, 119, 6, var(--tw-border-opacity));
+}
+
+.border-green-200{
+  --tw-border-opacity:1;
+  border-color:rgba(167, 243, 208, var(--tw-border-opacity));
+}
+
+.border-green-400{
+  --tw-border-opacity:1;
+  border-color:rgba(52, 211, 153, var(--tw-border-opacity));
+}
+
+.border-green-600{
+  --tw-border-opacity:1;
+  border-color:rgba(5, 150, 105, var(--tw-border-opacity));
+}
+
+.border-green-700{
+  --tw-border-opacity:1;
+  border-color:rgba(4, 120, 87, var(--tw-border-opacity));
+}
+
+.border-blue-100{
+  --tw-border-opacity:1;
+  border-color:rgba(219, 234, 254, var(--tw-border-opacity));
+}
+
+.border-blue-200{
+  --tw-border-opacity:1;
+  border-color:rgba(191, 219, 254, var(--tw-border-opacity));
+}
+
+.border-blue-300{
+  --tw-border-opacity:1;
+  border-color:rgba(147, 197, 253, var(--tw-border-opacity));
+}
+
+.border-blue-400{
+  --tw-border-opacity:1;
+  border-color:rgba(96, 165, 250, var(--tw-border-opacity));
+}
+
+.border-blue-500{
+  --tw-border-opacity:1;
+  border-color:rgba(59, 130, 246, var(--tw-border-opacity));
+}
+
+.border-blue-600{
+  --tw-border-opacity:1;
+  border-color:rgba(37, 99, 235, var(--tw-border-opacity));
+}
+
+.border-blue-700{
+  --tw-border-opacity:1;
+  border-color:rgba(29, 78, 216, var(--tw-border-opacity));
+}
+
+.border-opacity-60{
+  --tw-border-opacity:0.6;
+}
+
+.bg-transparent{
+  background-color:transparent;
+}
+
+.bg-black{
+  --tw-bg-opacity:1;
+  background-color:rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity:1;
+  background-color:rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.bg-gray-50{
+  --tw-bg-opacity:1;
+  background-color:rgba(249, 250, 251, var(--tw-bg-opacity));
+}
+
+.bg-gray-100{
+  --tw-bg-opacity:1;
+  background-color:rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+
+.bg-gray-200{
+  --tw-bg-opacity:1;
+  background-color:rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+
+.bg-gray-300{
+  --tw-bg-opacity:1;
+  background-color:rgba(209, 213, 219, var(--tw-bg-opacity));
+}
+
+.bg-gray-400{
+  --tw-bg-opacity:1;
+  background-color:rgba(156, 163, 175, var(--tw-bg-opacity));
+}
+
+.bg-gray-700{
+  --tw-bg-opacity:1;
+  background-color:rgba(55, 65, 81, var(--tw-bg-opacity));
+}
+
+.bg-gray-800{
+  --tw-bg-opacity:1;
+  background-color:rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
+.bg-gray-900{
+  --tw-bg-opacity:1;
+  background-color:rgba(17, 24, 39, var(--tw-bg-opacity));
+}
+
+.bg-red-100{
+  --tw-bg-opacity:1;
+  background-color:rgba(254, 226, 226, var(--tw-bg-opacity));
+}
+
+.bg-red-200{
+  --tw-bg-opacity:1;
+  background-color:rgba(254, 202, 202, var(--tw-bg-opacity));
+}
+
+.bg-red-500{
+  --tw-bg-opacity:1;
+  background-color:rgba(239, 68, 68, var(--tw-bg-opacity));
+}
+
+.bg-red-600{
+  --tw-bg-opacity:1;
+  background-color:rgba(220, 38, 38, var(--tw-bg-opacity));
+}
+
+.bg-yellow-100{
+  --tw-bg-opacity:1;
+  background-color:rgba(254, 243, 199, var(--tw-bg-opacity));
+}
+
+.bg-yellow-400{
+  --tw-bg-opacity:1;
+  background-color:rgba(251, 191, 36, var(--tw-bg-opacity));
+}
+
+.bg-yellow-600{
+  --tw-bg-opacity:1;
+  background-color:rgba(217, 119, 6, var(--tw-bg-opacity));
+}
+
+.bg-green-100{
+  --tw-bg-opacity:1;
+  background-color:rgba(209, 250, 229, var(--tw-bg-opacity));
+}
+
+.bg-green-200{
+  --tw-bg-opacity:1;
+  background-color:rgba(167, 243, 208, var(--tw-bg-opacity));
+}
+
+.bg-green-300{
+  --tw-bg-opacity:1;
+  background-color:rgba(110, 231, 183, var(--tw-bg-opacity));
+}
+
+.bg-green-400{
+  --tw-bg-opacity:1;
+  background-color:rgba(52, 211, 153, var(--tw-bg-opacity));
+}
+
+.bg-green-500{
+  --tw-bg-opacity:1;
+  background-color:rgba(16, 185, 129, var(--tw-bg-opacity));
+}
+
+.bg-green-600{
+  --tw-bg-opacity:1;
+  background-color:rgba(5, 150, 105, var(--tw-bg-opacity));
+}
+
+.bg-green-700{
+  --tw-bg-opacity:1;
+  background-color:rgba(4, 120, 87, var(--tw-bg-opacity));
+}
+
+.bg-blue-50{
+  --tw-bg-opacity:1;
+  background-color:rgba(239, 246, 255, var(--tw-bg-opacity));
+}
+
+.bg-blue-100{
+  --tw-bg-opacity:1;
+  background-color:rgba(219, 234, 254, var(--tw-bg-opacity));
+}
+
+.bg-blue-200{
+  --tw-bg-opacity:1;
+  background-color:rgba(191, 219, 254, var(--tw-bg-opacity));
+}
+
+.bg-blue-400{
+  --tw-bg-opacity:1;
+  background-color:rgba(96, 165, 250, var(--tw-bg-opacity));
+}
+
+.bg-blue-500{
+  --tw-bg-opacity:1;
+  background-color:rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+
+.bg-blue-600{
+  --tw-bg-opacity:1;
+  background-color:rgba(37, 99, 235, var(--tw-bg-opacity));
+}
+
+.bg-blue-700{
+  --tw-bg-opacity:1;
+  background-color:rgba(29, 78, 216, var(--tw-bg-opacity));
+}
+
+.bg-blue-800{
+  --tw-bg-opacity:1;
+  background-color:rgba(30, 64, 175, var(--tw-bg-opacity));
+}
+
+.bg-blue-900{
+  --tw-bg-opacity:1;
+  background-color:rgba(30, 58, 138, var(--tw-bg-opacity));
+}
+
+.bg-indigo-600{
+  --tw-bg-opacity:1;
+  background-color:rgba(79, 70, 229, var(--tw-bg-opacity));
+}
+
+.bg-purple-100{
+  --tw-bg-opacity:1;
+  background-color:rgba(237, 233, 254, var(--tw-bg-opacity));
+}
+
+.bg-pink-200{
+  --tw-bg-opacity:1;
+  background-color:rgba(251, 207, 232, var(--tw-bg-opacity));
+}
+
+.bg-pink-700{
+  --tw-bg-opacity:1;
+  background-color:rgba(190, 24, 93, var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-100:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-200:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-300:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(209, 213, 219, var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-800:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-900:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(17, 24, 39, var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-100:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(254, 226, 226, var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-200:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(254, 202, 202, var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-300:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(252, 165, 165, var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-500:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(239, 68, 68, var(--tw-bg-opacity));
+}
+
+.hover\:bg-yellow-300:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(252, 211, 77, var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-200:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(167, 243, 208, var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-300:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(110, 231, 183, var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-500:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(16, 185, 129, var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-600:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(5, 150, 105, var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-100:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(219, 234, 254, var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-200:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(191, 219, 254, var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-300:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(147, 197, 253, var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-500:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-600:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(37, 99, 235, var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-700:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(29, 78, 216, var(--tw-bg-opacity));
+}
+
+.hover\:bg-indigo-700:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(67, 56, 202, var(--tw-bg-opacity));
+}
+
+.hover\:bg-pink-200:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(251, 207, 232, var(--tw-bg-opacity));
+}
+
+.hover\:bg-pink-300:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(249, 168, 212, var(--tw-bg-opacity));
+}
+
+.bg-opacity-10{
+  --tw-bg-opacity:0.1;
+}
+
+.bg-opacity-20{
+  --tw-bg-opacity:0.2;
+}
+
+.bg-opacity-25{
+  --tw-bg-opacity:0.25;
+}
+
+.bg-opacity-40{
+  --tw-bg-opacity:0.4;
+}
+
+.bg-opacity-50{
+  --tw-bg-opacity:0.5;
+}
+
+.bg-opacity-60{
+  --tw-bg-opacity:0.6;
+}
+
+.bg-opacity-70{
+  --tw-bg-opacity:0.7;
+}
+
+.bg-opacity-75{
+  --tw-bg-opacity:0.75;
+}
+
+.bg-opacity-80{
+  --tw-bg-opacity:0.8;
+}
+
+.hover\:bg-opacity-25:hover{
+  --tw-bg-opacity:0.25;
+}
+
+.hover\:bg-opacity-50:hover{
+  --tw-bg-opacity:0.5;
+}
+
+.hover\:bg-opacity-75:hover{
+  --tw-bg-opacity:0.75;
+}
+
+.hover\:bg-opacity-80:hover{
+  --tw-bg-opacity:0.8;
+}
+
+.bg-gradient-to-t{
+  background-image:linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-tr{
+  background-image:linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-r{
+  background-image:linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-br{
+  background-image:linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-white{
+  --tw-gradient-from:#fff;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+}
+
+.from-gray-50{
+  --tw-gradient-from:#f9fafb;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(249, 250, 251, 0));
+}
+
+.from-gray-300{
+  --tw-gradient-from:#d1d5db;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(209, 213, 219, 0));
+}
+
+.from-gray-400{
+  --tw-gradient-from:#9ca3af;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(156, 163, 175, 0));
+}
+
+.from-gray-600{
+  --tw-gradient-from:#4b5563;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(75, 85, 99, 0));
+}
+
+.from-gray-800{
+  --tw-gradient-from:#1f2937;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(31, 41, 55, 0));
+}
+
+.from-red-200{
+  --tw-gradient-from:#fecaca;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(254, 202, 202, 0));
+}
+
+.from-red-500{
+  --tw-gradient-from:#ef4444;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(239, 68, 68, 0));
+}
+
+.from-yellow-500{
+  --tw-gradient-from:#f59e0b;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(245, 158, 11, 0));
+}
+
+.from-yellow-600{
+  --tw-gradient-from:#d97706;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(217, 119, 6, 0));
+}
+
+.from-green-100{
+  --tw-gradient-from:#d1fae5;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(209, 250, 229, 0));
+}
+
+.from-green-200{
+  --tw-gradient-from:#a7f3d0;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(167, 243, 208, 0));
+}
+
+.from-green-300{
+  --tw-gradient-from:#6ee7b7;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(110, 231, 183, 0));
+}
+
+.from-green-400{
+  --tw-gradient-from:#34d399;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(52, 211, 153, 0));
+}
+
+.from-green-500{
+  --tw-gradient-from:#10b981;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(16, 185, 129, 0));
+}
+
+.from-green-600{
+  --tw-gradient-from:#059669;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(5, 150, 105, 0));
+}
+
+.from-blue-100{
+  --tw-gradient-from:#dbeafe;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(219, 234, 254, 0));
+}
+
+.from-blue-300{
+  --tw-gradient-from:#93c5fd;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(147, 197, 253, 0));
+}
+
+.from-blue-400{
+  --tw-gradient-from:#60a5fa;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(96, 165, 250, 0));
+}
+
+.from-blue-500{
+  --tw-gradient-from:#3b82f6;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(59, 130, 246, 0));
+}
+
+.from-blue-600{
+  --tw-gradient-from:#2563eb;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 99, 235, 0));
+}
+
+.from-blue-700{
+  --tw-gradient-from:#1d4ed8;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(29, 78, 216, 0));
+}
+
+.from-blue-800{
+  --tw-gradient-from:#1e40af;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(30, 64, 175, 0));
+}
+
+.from-blue-900{
+  --tw-gradient-from:#1e3a8a;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(30, 58, 138, 0));
+}
+
+.from-purple-400{
+  --tw-gradient-from:#a78bfa;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(167, 139, 250, 0));
+}
+
+.from-purple-500{
+  --tw-gradient-from:#8b5cf6;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(139, 92, 246, 0));
+}
+
+.from-purple-600{
+  --tw-gradient-from:#7c3aed;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(124, 58, 237, 0));
+}
+
+.from-purple-700{
+  --tw-gradient-from:#6d28d9;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(109, 40, 217, 0));
+}
+
+.from-purple-800{
+  --tw-gradient-from:#5b21b6;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(91, 33, 182, 0));
+}
+
+.from-pink-400{
+  --tw-gradient-from:#f472b6;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(244, 114, 182, 0));
+}
+
+.from-pink-500{
+  --tw-gradient-from:#ec4899;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(236, 72, 153, 0));
+}
+
+.hover\:from-green-500:hover{
+  --tw-gradient-from:#10b981;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(16, 185, 129, 0));
+}
+
+.hover\:from-pink-500:hover{
+  --tw-gradient-from:#ec4899;
+  --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to, rgba(236, 72, 153, 0));
+}
+
+.to-transparent{
+  --tw-gradient-to:transparent;
+}
+
+.to-black{
+  --tw-gradient-to:#000;
+}
+
+.to-white{
+  --tw-gradient-to:#fff;
+}
+
+.to-gray-50{
+  --tw-gradient-to:#f9fafb;
+}
+
+.to-gray-100{
+  --tw-gradient-to:#f3f4f6;
+}
+
+.to-gray-500{
+  --tw-gradient-to:#6b7280;
+}
+
+.to-gray-600{
+  --tw-gradient-to:#4b5563;
+}
+
+.to-gray-700{
+  --tw-gradient-to:#374151;
+}
+
+.to-gray-800{
+  --tw-gradient-to:#1f2937;
+}
+
+.to-red-600{
+  --tw-gradient-to:#dc2626;
+}
+
+.to-yellow-200{
+  --tw-gradient-to:#fde68a;
+}
+
+.to-yellow-500{
+  --tw-gradient-to:#f59e0b;
+}
+
+.to-green-100{
+  --tw-gradient-to:#d1fae5;
+}
+
+.to-green-400{
+  --tw-gradient-to:#34d399;
+}
+
+.to-green-500{
+  --tw-gradient-to:#10b981;
+}
+
+.to-green-600{
+  --tw-gradient-to:#059669;
+}
+
+.to-blue-100{
+  --tw-gradient-to:#dbeafe;
+}
+
+.to-blue-200{
+  --tw-gradient-to:#bfdbfe;
+}
+
+.to-blue-500{
+  --tw-gradient-to:#3b82f6;
+}
+
+.to-blue-600{
+  --tw-gradient-to:#2563eb;
+}
+
+.to-purple-100{
+  --tw-gradient-to:#ede9fe;
+}
+
+.to-purple-500{
+  --tw-gradient-to:#8b5cf6;
+}
+
+.to-purple-600{
+  --tw-gradient-to:#7c3aed;
+}
+
+.to-purple-700{
+  --tw-gradient-to:#6d28d9;
+}
+
+.to-purple-800{
+  --tw-gradient-to:#5b21b6;
+}
+
+.to-pink-100{
+  --tw-gradient-to:#fce7f3;
+}
+
+.to-pink-500{
+  --tw-gradient-to:#ec4899;
+}
+
+.to-pink-600{
+  --tw-gradient-to:#db2777;
+}
+
+.to-pink-700{
+  --tw-gradient-to:#be185d;
+}
+
+.hover\:to-gray-700:hover{
+  --tw-gradient-to:#374151;
+}
+
+.hover\:to-gray-800:hover{
+  --tw-gradient-to:#1f2937;
+}
+
+.hover\:to-red-600:hover{
+  --tw-gradient-to:#dc2626;
+}
+
+.hover\:to-yellow-600:hover{
+  --tw-gradient-to:#d97706;
+}
+
+.hover\:to-green-500:hover{
+  --tw-gradient-to:#10b981;
+}
+
+.hover\:to-green-600:hover{
+  --tw-gradient-to:#059669;
+}
+
+.hover\:to-blue-500:hover{
+  --tw-gradient-to:#3b82f6;
+}
+
+.hover\:to-blue-600:hover{
+  --tw-gradient-to:#2563eb;
+}
+
+.hover\:to-blue-800:hover{
+  --tw-gradient-to:#1e40af;
+}
+
+.hover\:to-purple-600:hover{
+  --tw-gradient-to:#7c3aed;
+}
+
+.bg-cover{
+  background-size:cover;
+}
+
+.bg-contain{
+  background-size:contain;
+}
+
+.bg-clip-text{
+  -webkit-background-clip:text;
+          background-clip:text;
+}
+
+.bg-top{
+  background-position:top;
+}
+
+.bg-no-repeat{
+  background-repeat:no-repeat;
+}
+
+.object-contain{
+  -o-object-fit:contain;
+     object-fit:contain;
+}
+
+.object-cover{
+  -o-object-fit:cover;
+     object-fit:cover;
+}
+
+.object-center{
+  -o-object-position:center;
+     object-position:center;
+}
+
+.p-0{
+  padding:0px;
+}
+
+.p-1{
+  padding:0.25rem;
+}
+
+.p-2{
+  padding:0.5rem;
+}
+
+.p-3{
+  padding:0.75rem;
+}
+
+.p-4{
+  padding:1rem;
+}
+
+.p-5{
+  padding:1.25rem;
+}
+
+.p-10{
+  padding:2.5rem;
+}
+
+.p-0\.5{
+  padding:0.125rem;
+}
+
+.px-1{
+  padding-left:0.25rem;
+  padding-right:0.25rem;
+}
+
+.px-2{
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+}
+
+.px-3{
+  padding-left:0.75rem;
+  padding-right:0.75rem;
+}
+
+.px-4{
+  padding-left:1rem;
+  padding-right:1rem;
+}
+
+.px-6{
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+}
+
+.px-8{
+  padding-left:2rem;
+  padding-right:2rem;
+}
+
+.px-1\.5{
+  padding-left:0.375rem;
+  padding-right:0.375rem;
+}
+
+.py-0{
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+.py-1{
+  padding-top:0.25rem;
+  padding-bottom:0.25rem;
+}
+
+.py-2{
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+}
+
+.py-3{
+  padding-top:0.75rem;
+  padding-bottom:0.75rem;
+}
+
+.py-4{
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+
+.py-5{
+  padding-top:1.25rem;
+  padding-bottom:1.25rem;
+}
+
+.py-6{
+  padding-top:1.5rem;
+  padding-bottom:1.5rem;
+}
+
+.py-8{
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
+
+.py-10{
+  padding-top:2.5rem;
+  padding-bottom:2.5rem;
+}
+
+.py-0\.5{
+  padding-top:0.125rem;
+  padding-bottom:0.125rem;
+}
+
+.py-1\.5{
+  padding-top:0.375rem;
+  padding-bottom:0.375rem;
+}
+
+.pt-2{
+  padding-top:0.5rem;
+}
+
+.pt-4{
+  padding-top:1rem;
+}
+
+.pt-40{
+  padding-top:10rem;
+}
+
+.pr-2{
+  padding-right:0.5rem;
+}
+
+.pr-4{
+  padding-right:1rem;
+}
+
+.pb-0{
+  padding-bottom:0px;
+}
+
+.pb-1{
+  padding-bottom:0.25rem;
+}
+
+.pb-2{
+  padding-bottom:0.5rem;
+}
+
+.pb-4{
+  padding-bottom:1rem;
+}
+
+.pb-0\.5{
+  padding-bottom:0.125rem;
+}
+
+.pl-1{
+  padding-left:0.25rem;
+}
+
+.pl-3{
+  padding-left:0.75rem;
+}
+
+.pl-4{
+  padding-left:1rem;
+}
+
+.pl-40{
+  padding-left:10rem;
+}
+
+.text-left{
+  text-align:left;
+}
+
+.text-center{
+  text-align:center;
+}
+
+.text-right{
+  text-align:right;
+}
+
+.align-top{
+  vertical-align:top;
+}
+
+.text-xs{
+  font-size:0.75rem;
+  line-height:1rem;
+}
+
+.text-sm{
+  font-size:0.875rem;
+  line-height:1.25rem;
+}
+
+.text-base{
+  font-size:1rem;
+  line-height:1.5rem;
+}
+
+.text-lg{
+  font-size:1.125rem;
+  line-height:1.75rem;
+}
+
+.text-xl{
+  font-size:1.25rem;
+  line-height:1.75rem;
+}
+
+.text-2xl{
+  font-size:1.5rem;
+  line-height:2rem;
+}
+
+.text-3xl{
+  font-size:1.875rem;
+  line-height:2.25rem;
+}
+
+.text-4xl{
+  font-size:2.25rem;
+  line-height:2.5rem;
+}
+
+.text-5xl{
+  font-size:3rem;
+  line-height:1;
+}
+
+.text-6xl{
+  font-size:3.75rem;
+  line-height:1;
+}
+
+.text-9xl{
+  font-size:8rem;
+  line-height:1;
+}
+
+.font-semibold{
+  font-weight:600;
+}
+
+.font-bold{
+  font-weight:700;
+}
+
+.uppercase{
+  text-transform:uppercase;
+}
+
+.lowercase{
+  text-transform:lowercase;
+}
+
+.capitalize{
+  text-transform:capitalize;
+}
+
+.leading-3{
+  line-height:.75rem;
+}
+
+.leading-none{
+  line-height:1;
+}
+
+.text-transparent{
+  color:transparent;
+}
+
+.text-black{
+  --tw-text-opacity:1;
+  color:rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity:1;
+  color:rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.text-gray-100{
+  --tw-text-opacity:1;
+  color:rgba(243, 244, 246, var(--tw-text-opacity));
+}
+
+.text-gray-200{
+  --tw-text-opacity:1;
+  color:rgba(229, 231, 235, var(--tw-text-opacity));
+}
+
+.text-gray-300{
+  --tw-text-opacity:1;
+  color:rgba(209, 213, 219, var(--tw-text-opacity));
+}
+
+.text-gray-400{
+  --tw-text-opacity:1;
+  color:rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.text-gray-500{
+  --tw-text-opacity:1;
+  color:rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.text-gray-600{
+  --tw-text-opacity:1;
+  color:rgba(75, 85, 99, var(--tw-text-opacity));
+}
+
+.text-gray-700{
+  --tw-text-opacity:1;
+  color:rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
+.text-gray-800{
+  --tw-text-opacity:1;
+  color:rgba(31, 41, 55, var(--tw-text-opacity));
+}
+
+.text-gray-900{
+  --tw-text-opacity:1;
+  color:rgba(17, 24, 39, var(--tw-text-opacity));
+}
+
+.text-red-400{
+  --tw-text-opacity:1;
+  color:rgba(248, 113, 113, var(--tw-text-opacity));
+}
+
+.text-red-500{
+  --tw-text-opacity:1;
+  color:rgba(239, 68, 68, var(--tw-text-opacity));
+}
+
+.text-red-600{
+  --tw-text-opacity:1;
+  color:rgba(220, 38, 38, var(--tw-text-opacity));
+}
+
+.text-red-700{
+  --tw-text-opacity:1;
+  color:rgba(185, 28, 28, var(--tw-text-opacity));
+}
+
+.text-red-800{
+  --tw-text-opacity:1;
+  color:rgba(153, 27, 27, var(--tw-text-opacity));
+}
+
+.text-yellow-300{
+  --tw-text-opacity:1;
+  color:rgba(252, 211, 77, var(--tw-text-opacity));
+}
+
+.text-yellow-400{
+  --tw-text-opacity:1;
+  color:rgba(251, 191, 36, var(--tw-text-opacity));
+}
+
+.text-yellow-500{
+  --tw-text-opacity:1;
+  color:rgba(245, 158, 11, var(--tw-text-opacity));
+}
+
+.text-yellow-600{
+  --tw-text-opacity:1;
+  color:rgba(217, 119, 6, var(--tw-text-opacity));
+}
+
+.text-green-100{
+  --tw-text-opacity:1;
+  color:rgba(209, 250, 229, var(--tw-text-opacity));
+}
+
+.text-green-500{
+  --tw-text-opacity:1;
+  color:rgba(16, 185, 129, var(--tw-text-opacity));
+}
+
+.text-green-600{
+  --tw-text-opacity:1;
+  color:rgba(5, 150, 105, var(--tw-text-opacity));
+}
+
+.text-green-700{
+  --tw-text-opacity:1;
+  color:rgba(4, 120, 87, var(--tw-text-opacity));
+}
+
+.text-green-800{
+  --tw-text-opacity:1;
+  color:rgba(6, 95, 70, var(--tw-text-opacity));
+}
+
+.text-blue-100{
+  --tw-text-opacity:1;
+  color:rgba(219, 234, 254, var(--tw-text-opacity));
+}
+
+.text-blue-300{
+  --tw-text-opacity:1;
+  color:rgba(147, 197, 253, var(--tw-text-opacity));
+}
+
+.text-blue-400{
+  --tw-text-opacity:1;
+  color:rgba(96, 165, 250, var(--tw-text-opacity));
+}
+
+.text-blue-500{
+  --tw-text-opacity:1;
+  color:rgba(59, 130, 246, var(--tw-text-opacity));
+}
+
+.text-blue-600{
+  --tw-text-opacity:1;
+  color:rgba(37, 99, 235, var(--tw-text-opacity));
+}
+
+.text-blue-700{
+  --tw-text-opacity:1;
+  color:rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.text-blue-800{
+  --tw-text-opacity:1;
+  color:rgba(30, 64, 175, var(--tw-text-opacity));
+}
+
+.text-blue-900{
+  --tw-text-opacity:1;
+  color:rgba(30, 58, 138, var(--tw-text-opacity));
+}
+
+.text-purple-600{
+  --tw-text-opacity:1;
+  color:rgba(124, 58, 237, var(--tw-text-opacity));
+}
+
+.text-pink-600{
+  --tw-text-opacity:1;
+  color:rgba(219, 39, 119, var(--tw-text-opacity));
+}
+
+.text-pink-700{
+  --tw-text-opacity:1;
+  color:rgba(190, 24, 93, var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity:1;
+  color:rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.hover\:text-red-600:hover{
+  --tw-text-opacity:1;
+  color:rgba(220, 38, 38, var(--tw-text-opacity));
+}
+
+.hover\:text-blue-500:hover{
+  --tw-text-opacity:1;
+  color:rgba(59, 130, 246, var(--tw-text-opacity));
+}
+
+.hover\:text-blue-600:hover{
+  --tw-text-opacity:1;
+  color:rgba(37, 99, 235, var(--tw-text-opacity));
+}
+
+.hover\:text-blue-700:hover{
+  --tw-text-opacity:1;
+  color:rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.hover\:text-pink-900:hover{
+  --tw-text-opacity:1;
+  color:rgba(131, 24, 67, var(--tw-text-opacity));
+}
+
+.text-opacity-60{
+  --tw-text-opacity:0.6;
+}
+
+.underline{
+  text-decoration:underline;
+}
+
+.placeholder-gray-700::-moz-placeholder{
+  --tw-placeholder-opacity:1;
+  color:rgba(55, 65, 81, var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-700:-ms-input-placeholder{
+  --tw-placeholder-opacity:1;
+  color:rgba(55, 65, 81, var(--tw-placeholder-opacity));
+}
+
+.placeholder-gray-700::placeholder{
+  --tw-placeholder-opacity:1;
+  color:rgba(55, 65, 81, var(--tw-placeholder-opacity));
+}
+
+.placeholder-red-400::-moz-placeholder{
+  --tw-placeholder-opacity:1;
+  color:rgba(248, 113, 113, var(--tw-placeholder-opacity));
+}
+
+.placeholder-red-400:-ms-input-placeholder{
+  --tw-placeholder-opacity:1;
+  color:rgba(248, 113, 113, var(--tw-placeholder-opacity));
+}
+
+.placeholder-red-400::placeholder{
+  --tw-placeholder-opacity:1;
+  color:rgba(248, 113, 113, var(--tw-placeholder-opacity));
+}
+
+.opacity-25{
+  opacity:0.25;
+}
+
+.opacity-40{
+  opacity:0.4;
+}
+
+.opacity-50{
+  opacity:0.5;
+}
+
+.opacity-70{
+  opacity:0.7;
+}
+
+.opacity-75{
+  opacity:0.75;
+}
+
+.opacity-80{
+  opacity:0.8;
+}
+
+*, ::before, ::after{
+  --tw-shadow:0 0 #0000;
+}
+
+.shadow-sm{
+  --tw-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow{
+  --tw-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md{
+  --tw-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg{
+  --tw-shadow:0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl{
+  --tw-shadow:0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-none{
+  outline:2px solid transparent;
+  outline-offset:2px;
+}
+
+*, ::before, ::after{
+  --tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width:0px;
+  --tw-ring-offset-color:#fff;
+  --tw-ring-color:rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow:0 0 #0000;
+  --tw-ring-shadow:0 0 #0000;
+}
+
+.filter{
+  --tw-blur:var(--tw-empty,/*!*/ /*!*/);
+  --tw-brightness:var(--tw-empty,/*!*/ /*!*/);
+  --tw-contrast:var(--tw-empty,/*!*/ /*!*/);
+  --tw-grayscale:var(--tw-empty,/*!*/ /*!*/);
+  --tw-hue-rotate:var(--tw-empty,/*!*/ /*!*/);
+  --tw-invert:var(--tw-empty,/*!*/ /*!*/);
+  --tw-saturate:var(--tw-empty,/*!*/ /*!*/);
+  --tw-sepia:var(--tw-empty,/*!*/ /*!*/);
+  --tw-drop-shadow:var(--tw-empty,/*!*/ /*!*/);
+  filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur{
+  --tw-blur:blur(8px);
+}
+
+.blur-xl{
+  --tw-blur:blur(24px);
+}
+
+.grayscale{
+  --tw-grayscale:grayscale(100%);
+}
+
+.invert{
+  --tw-invert:invert(100%);
+}
+
+.backdrop-filter{
+  --tw-backdrop-blur:var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-brightness:var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-contrast:var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-grayscale:var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-hue-rotate:var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-invert:var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-opacity:var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-saturate:var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-sepia:var(--tw-empty,/*!*/ /*!*/);
+  -webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.transition-all{
+  transition-property:all;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:150ms;
+}
+
+.transition{
+  transition-property:background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property:background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property:background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:150ms;
+}
+
+.delay-100{
+  transition-delay:100ms;
+}
+
+.delay-150{
+  transition-delay:150ms;
+}
+
+.ease-in{
+  transition-timing-function:cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-in-out{
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 640px){
+  .sm\:inline{
+    display:inline;
+  }
+
+  .sm\:hidden{
+    display:none;
+  }
+
+  .sm\:w-80{
+    width:20rem;
+  }
+
+  .sm\:w-1\/2{
+    width:50%;
+  }
+
+  .sm\:w-1\/3{
+    width:33.333333%;
+  }
+
+  .sm\:px-2{
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+  }
+
+  .sm\:text-transparent{
+    color:transparent;
+  }
+
+  .sm\:text-current{
+    color:currentColor;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:static{
+    position:static;
+  }
+
+  .md\:absolute{
+    position:absolute;
+  }
+
+  .md\:relative{
+    position:relative;
+  }
+
+  .md\:m-0{
+    margin:0px;
+  }
+
+  .md\:mt-1{
+    margin-top:0.25rem;
+  }
+
+  .md\:ml-1{
+    margin-left:0.25rem;
+  }
+
+  .md\:block{
+    display:block;
+  }
+
+  .md\:flex{
+    display:flex;
+  }
+
+  .md\:hidden{
+    display:none;
+  }
+
+  .md\:h-36{
+    height:9rem;
+  }
+
+  .md\:h-full{
+    height:100%;
+  }
+
+  .md\:w-1\/2{
+    width:50%;
+  }
+
+  .md\:w-1\/3{
+    width:33.333333%;
+  }
+
+  .md\:w-2\/3{
+    width:66.666667%;
+  }
+
+  .md\:w-1\/4{
+    width:25%;
+  }
+
+  .md\:w-3\/4{
+    width:75%;
+  }
+
+  .md\:flex-nowrap{
+    flex-wrap:nowrap;
+  }
+
+  .md\:justify-start{
+    justify-content:flex-start;
+  }
+
+  .md\:border-l{
+    border-left-width:1px;
+  }
+
+  .md\:px-3{
+    padding-left:0.75rem;
+    padding-right:0.75rem;
+  }
+
+  .md\:py-20{
+    padding-top:5rem;
+    padding-bottom:5rem;
+  }
+
+  .md\:py-24{
+    padding-top:6rem;
+    padding-bottom:6rem;
+  }
+
+  .md\:text-left{
+    text-align:left;
+  }
+
+  .md\:text-lg{
+    font-size:1.125rem;
+    line-height:1.75rem;
+  }
+
+  .md\:text-2xl{
+    font-size:1.5rem;
+    line-height:2rem;
+  }
+
+  .md\:text-3xl{
+    font-size:1.875rem;
+    line-height:2.25rem;
+  }
+
+  .md\:text-6xl{
+    font-size:3.75rem;
+    line-height:1;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:flex{
+    display:flex;
+  }
+
+  .lg\:h-72{
+    height:18rem;
+  }
+
+  .lg\:w-1\/2{
+    width:50%;
+  }
+
+  .lg\:w-1\/3{
+    width:33.333333%;
+  }
+
+  .lg\:w-2\/3{
+    width:66.666667%;
+  }
+
+  .lg\:w-1\/4{
+    width:25%;
+  }
+
+  .lg\:w-1\/5{
+    width:20%;
+  }
+
+  .lg\:gap-4{
+    gap:1rem;
+  }
+
+  .lg\:px-6{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+  }
+
+  .lg\:py-12{
+    padding-top:3rem;
+    padding-bottom:3rem;
+  }
+
+  .lg\:py-32{
+    padding-top:8rem;
+    padding-bottom:8rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:w-2\/3{
+    width:66.666667%;
+  }
+
+  .xl\:w-1\/6{
+    width:16.666667%;
+  }
+}
+body{
+  font-family:"Ubuntu",sans-serif
+}
+
+#__nuxt{
+  touch-action:auto!important
+}
+
+.toast{
+  position:fixed;
+  display:flex;
+  bottom:20px;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background-color:#fff;
+  box-shadow:0 5px 10px 0 rgba(0,0,0,.26666666666666666);
+  border-radius:5px;
+  padding:10px 20px;
+  z-index:99999999;
+  align-items:center
+}
+
+.toast-progress{
+  width:0;
+  height:2px;
+  position:absolute;
+  left:0;
+  bottom:0;
+  transition:.5s;
+  -webkit-animation:widthToZero 4s linear;
+          animation:widthToZero 4s linear
+}
+
+.toast-message{
+  margin:5px
+}
+
+.toast.error .toast-progress{
+  background-color:#ff5252
+}
+
+.toast.success .toast-progress{
+  background-color:#4caf50
+}
+
+.toast.error svg{
+  fill:#ff5252
+}
+
+.toast.success svg{
+  fill:#4caf50
+}
+
+.toast-close{
+  position:absolute;
+  top:-10px;
+  right:-10px;
+  width:22px;
+  text-align:center;
+  background:#fff;
+  border-radius:4px;
+  box-shadow:-1px 2px 5px 0 rgba(0,0,0,.26666666666666666);
+  cursor:pointer
+}
+
+.toast-fade-in{
+  -webkit-animation:fadeInUp .5s ease-in-out;
+          animation:fadeInUp .5s ease-in-out
+}
+
+.toast-fade-out{
+  -webkit-animation:fadeOutDown .5s ease-in-out;
+          animation:fadeOutDown .5s ease-in-out
+}
+
+input[type=range]{
+  height:15px;
+  -webkit-appearance:none;
+  background:#525252;
+  outline:none;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:inset 0 0 5px rgba(0,0,0,.757)
+}
+
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  background:#008bfd;
+  cursor:pointer;
+  border:4px solid #fff;
+  box-shadow:-1207px 0 0 1200px #008bfd
+}
+
+.to-pay:after{
+  content:"";
+  display:flex;
+  position:absolute;
+  border-left:10px solid #111827;
+  border-top:10px solid transparent;
+  background:transparent;
+  transform:rotate(90deg);
+  bottom:-5px;
+  left:0
+}
+
+.to-pay[style*=right]:after{
+  left:unset;
+  right:0;
+  transform:rotate(180deg)
+}
+
+.pay-status{
+  padding:2px 5px;
+  background:#5a5a5a;
+  border-radius:8px;
+  color:#fff
+}
+
+.pay-status.APPROVED{
+  background:#0092e6
+}
+
+.pay-status.CREATED{
+  background:#ffb400
+}
+
+.pay-status.COMPLETED{
+  background:#08c402
+}
+
+.pb-full{
+  padding-bottom:100%
+}
+
+.pb-2\/3{
+  padding-bottom:66.66667%
+}
+</style>
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div><div data-fetch-key="NFTGenerator:0" class=" bg-white h-screen"><div class="flex w-full flex-col"><div class="h-72 overflow-hidden relative w-full"><div class="flex flex-wrap"><div class="relative w-full p-1 overflow-hidden"><img alt="Ringo Bingo Avatars" src="images/bafybeianqc6hbhbjejh2dvww6bb2srbu37kyf5uuzs7ztflsfpiwkz5vha.ipfs.w3s.link-1.png" class="w-full bg-gray-800 filter blur-xl transform scale-150"> <div class=" absolute inset-0 bg-blue-500 bg-opacity-25"></div></div></div> <div class="bg-gradient-to-t from-white to-transparent absolute inset-0 w-full border-b-8 border-white"></div> <div class="flex justify-center items-end absolute inset-0"><img alt="Ringo Bingo Avatars" src="images/bafybeianqc6hbhbjejh2dvww6bb2srbu37kyf5uuzs7ztflsfpiwkz5vha.ipfs.w3s.link-1.png" class="w-36 h-36 rounded-full border-2 border-white shadow-md mb-2"></div></div> <h1 class="text-2xl font-semibold w-full text-center uppercase">Ringo Bingo Avatars</h1> <div class="flex items-center justify-center"><p class="text-2xl text-center uppercase text-blue-600">-- Minted of 1000 NFTs</p> <button class="mx-1 transition delay-150 text-blue-500 w-8 leading-3 text-2xl font-semibold h-8 flex items-center justify-center"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewbox="0 0 24 24"><path d="M19.91,15.51H15.38a1,1,0,0,0,0,2h2.4A8,8,0,0,1,4,12a1,1,0,0,0-2,0,10,10,0,0,0,16.88,7.23V21a1,1,0,0,0,2,0V16.5A1,1,0,0,0,19.91,15.51ZM12,2A10,10,0,0,0,5.12,4.77V3a1,1,0,0,0-2,0V7.5a1,1,0,0,0,1,1h4.5a1,1,0,0,0,0-2H6.22A8,8,0,0,1,20,12a1,1,0,0,0,2,0A10,10,0,0,0,12,2Z"></path></svg></button></div> <div class="flex justify-center items-center"><span class="text-center">0x3aC22...C8B5539</span> <button class="rounded-lg hover:bg-opacity-75 bg-opacity-50 mx-1"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 488.3 488.3" xml:space="preserve" class="h-5 w-5" style="enable-background:new 0 0 488.3 488.3;"><g><g><path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"></path> <path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"></path></g></g></svg></button></div> <div class="text-center"><p>( Network : 44)</p></div> <form action="#" class="flex flex-col w-full max-w-3xl p-4 m-auto"><button type="button" id="mint" class="bg-blue-600 hover:bg-blue-700 text-white uppercase rounded-md px-8 py-4">Connect Your Wallet</button> <div class="my-4">
+                Connected wallet: <small id="wallet-address">Connect your wallet first</small> <div class="flex flex-col mt-2 rounded-md border border-gray-200 bg-gray-100 p-2"><span>No account connected</span> </div></div> <div class="flex w-full mb-2"><button disabled type="button" class=" text-white uppercase rounded-l-md px-8 py-4 bg-gray-400">-</button> <input disabled placeholder="1" id="quantity" min="1" type="number" required="required" max="100" value="1" class=" bg-white border-2 text-center uppercase px-8 py-4 w-full border-gray-400 text-gray-400"> <button disabled type="button" class="text-white uppercase rounded-r-md px-8 py-4 bg-gray-400">+</button></div> <button disabled id="mint" class=" text-white uppercase rounded-md px-8 py-4 bg-gray-400">Mint Now</button> <small class="my-1">Network (Ethereum)</small> <div id="mintingOutput" class="p-4 bg-gray-900 rounded-md w-full my-2"><span class=" text-gray-500">Activity log</span></div> <div class="my-1"><small class=" text-gray-500">Make your own 10K NFT collection at <a href="?source=collection.html" target="_blank" class="text-blue-600">Genfty.com</a></small></div> <!----></form></div></div></div></div></div><script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L){x[0]={inputs:[],stateMutability:g,type:y,signature:y};x[1]={anonymous:j,inputs:[{indexed:d,internalType:a,name:m,type:a},{indexed:d,internalType:a,name:r,type:a},{indexed:d,internalType:b,name:l,type:b}],name:"Approval",type:o,signature:"0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925"};x[2]={anonymous:j,inputs:[{indexed:d,internalType:a,name:m,type:a},{indexed:d,internalType:a,name:s,type:a},{indexed:j,internalType:h,name:r,type:h}],name:"ApprovalForAll",type:o,signature:"0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31"};x[3]={anonymous:j,inputs:[{indexed:d,internalType:a,name:"previousOwner",type:a},{indexed:d,internalType:a,name:z,type:a}],name:"OwnershipTransferred",type:o,signature:"0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"};x[4]={anonymous:j,inputs:[{indexed:d,internalType:a,name:p,type:a},{indexed:d,internalType:a,name:n,type:a},{indexed:d,internalType:b,name:l,type:b}],name:"Transfer",type:o,signature:"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"};x[5]={inputs:[{internalType:a,name:n,type:a},{internalType:b,name:l,type:b}],name:"approve",outputs:[],stateMutability:g,type:c,signature:"0x095ea7b3"};x[6]={inputs:[{internalType:a,name:m,type:a}],name:"balanceOf",outputs:[{internalType:b,name:e,type:b}],stateMutability:f,type:c,constant:d,signature:"0x70a08231"};x[7]={inputs:[],name:"baseExtension",outputs:[{internalType:i,name:e,type:i}],stateMutability:f,type:c,constant:d,signature:"0xc6682862"};x[8]={inputs:[],name:"baseURI",outputs:[{internalType:i,name:e,type:i}],stateMutability:f,type:c,constant:d,signature:"0x6c0360eb"};x[9]={inputs:[],name:"cost",outputs:[{internalType:b,name:e,type:b}],stateMutability:f,type:c,constant:d,signature:"0x13faede6"};x[10]={inputs:[{internalType:b,name:l,type:b}],name:"getApproved",outputs:[{internalType:a,name:e,type:a}],stateMutability:f,type:c,constant:d,signature:"0x081812fc"};x[11]={inputs:[{internalType:a,name:m,type:a},{internalType:a,name:s,type:a}],name:"isApprovedForAll",outputs:[{internalType:h,name:e,type:h}],stateMutability:f,type:c,constant:d,signature:"0xe985e9c5"};x[12]={inputs:[],name:"maxMintAmount",outputs:[{internalType:b,name:e,type:b}],stateMutability:f,type:c,constant:d,signature:"0x239c70ae"};x[13]={inputs:[],name:"maxSupply",outputs:[{internalType:b,name:e,type:b}],stateMutability:f,type:c,constant:d,signature:"0xd5abeb01"};x[14]={inputs:[{internalType:a,name:"_to",type:a},{internalType:b,name:"_mintAmount",type:b}],name:"mint",outputs:[],stateMutability:A,type:c,payable:d,signature:"0x40c10f19"};x[15]={inputs:[],name:"name",outputs:[{internalType:i,name:e,type:i}],stateMutability:f,type:c,constant:d,signature:"0x06fdde03"};x[16]={inputs:[],name:m,outputs:[{internalType:a,name:e,type:a}],stateMutability:f,type:c,constant:d,signature:"0x8da5cb5b"};x[17]={inputs:[{internalType:b,name:l,type:b}],name:"ownerOf",outputs:[{internalType:a,name:e,type:a}],stateMutability:f,type:c,constant:d,signature:"0x6352211e"};x[18]={inputs:[{internalType:h,name:"_state",type:h}],name:"pause",outputs:[],stateMutability:g,type:c,signature:"0x02329a29"};x[19]={inputs:[],name:"paused",outputs:[{internalType:h,name:e,type:h}],stateMutability:f,type:c,constant:d,signature:"0x5c975abb"};x[20]={inputs:[{internalType:a,name:B,type:a}],name:"removeWhitelistUser",outputs:[],stateMutability:g,type:c,signature:"0x30cc7ae0"};x[21]={inputs:[],name:"renounceOwnership",outputs:[],stateMutability:g,type:c,signature:"0x715018a6"};x[22]={inputs:[{internalType:a,name:p,type:a},{internalType:a,name:n,type:a},{internalType:b,name:l,type:b}],name:C,outputs:[],stateMutability:g,type:c,signature:"0x42842e0e"};x[23]={inputs:[{internalType:a,name:p,type:a},{internalType:a,name:n,type:a},{internalType:b,name:l,type:b},{internalType:D,name:"_data",type:D}],name:C,outputs:[],stateMutability:g,type:c,signature:"0xb88d4fde"};x[24]={inputs:[{internalType:a,name:s,type:a},{internalType:h,name:r,type:h}],name:"setApprovalForAll",outputs:[],stateMutability:g,type:c,signature:"0xa22cb465"};x[25]={inputs:[{internalType:i,name:"_newBaseExtension",type:i}],name:"setBaseExtension",outputs:[],stateMutability:g,type:c,signature:"0xda3ef23f"};x[26]={inputs:[{internalType:i,name:"_newBaseURI",type:i}],name:"setBaseURI",outputs:[],stateMutability:g,type:c,signature:"0x55f804b3"};x[27]={inputs:[{internalType:b,name:"_newCost",type:b}],name:"setCost",outputs:[],stateMutability:g,type:c,signature:"0x44a0d68a"};x[28]={inputs:[{internalType:b,name:"_newmaxMintAmount",type:b}],name:"setmaxMintAmount",outputs:[],stateMutability:g,type:c,signature:"0x7f00c7a6"};x[29]={inputs:[{internalType:E,name:"interfaceId",type:E}],name:"supportsInterface",outputs:[{internalType:h,name:e,type:h}],stateMutability:f,type:c,constant:d,signature:"0x01ffc9a7"};x[30]={inputs:[],name:"symbol",outputs:[{internalType:i,name:e,type:i}],stateMutability:f,type:c,constant:d,signature:"0x95d89b41"};x[31]={inputs:[{internalType:b,name:F,type:b}],name:"tokenByIndex",outputs:[{internalType:b,name:e,type:b}],stateMutability:f,type:c,constant:d,signature:"0x4f6ccce7"};x[32]={inputs:[{internalType:a,name:m,type:a},{internalType:b,name:F,type:b}],name:"tokenOfOwnerByIndex",outputs:[{internalType:b,name:e,type:b}],stateMutability:f,type:c,constant:d,signature:"0x2f745c59"};x[33]={inputs:[{internalType:b,name:l,type:b}],name:"tokenURI",outputs:[{internalType:i,name:e,type:i}],stateMutability:f,type:c,constant:d,signature:"0xc87b56dd"};x[34]={inputs:[],name:"totalSupply",outputs:[{internalType:b,name:e,type:b}],stateMutability:f,type:c,constant:d,signature:"0x18160ddd"};x[35]={inputs:[{internalType:a,name:p,type:a},{internalType:a,name:n,type:a},{internalType:b,name:l,type:b}],name:"transferFrom",outputs:[],stateMutability:g,type:c,signature:"0x23b872dd"};x[36]={inputs:[{internalType:a,name:z,type:a}],name:"transferOwnership",outputs:[],stateMutability:g,type:c,signature:"0xf2fde38b"};x[37]={inputs:[{internalType:a,name:"_owner",type:a}],name:"walletOfOwner",outputs:[{internalType:G,name:e,type:G}],stateMutability:f,type:c,constant:d,signature:"0x438b6300"};x[38]={inputs:[{internalType:a,name:B,type:a}],name:"whitelistUser",outputs:[],stateMutability:g,type:c,signature:"0x4a4c560d"};x[39]={inputs:[{internalType:a,name:e,type:a}],name:"whitelisted",outputs:[{internalType:h,name:e,type:h}],stateMutability:f,type:c,constant:d,signature:"0xd936547e"};x[40]={inputs:[],name:"withdraw",outputs:[],stateMutability:A,type:c,payable:d,signature:"0x3ccfd60b"};return {layout:"full",data:[{}],fetch:{"NFTGenerator:0":{contract:{_id:"6416c78d2f7d83f4e5601efd",user:"6416b4b72f7d83f4e5601e1e",images:"bafybeianqc6hbhbjejh2dvww6bb2srbu37kyf5uuzs7ztflsfpiwkz5vha",metadata:"bafybeife65kgj2bmnuc4hk7ezcpumtngvwyea4hp3pjbdfck3owlhfaj5q",account:"0xa09b260809915da08f831a53da431aa3c1d03618",networkId:v,address:w,name:"Ringo Bingo Avatars",symbol:"RINGO",cost:20000,maxSupply:1000,maxMintAmount:q,transactionHash:"0xc4bbded594d17b681526fb2b69e354a21e2dbe9898daebe310d7dc4379f135b5",abi:x,bytecode:"60806040526040518060400160405280600581526020017f2e6a736f6e000000000000000000000000000000000000000000000000000000815250600c90816200004a919062000585565b5069043c33c1937564800000600d556103e8600e556001600f556000601060006101000a81548160ff0219169083151502179055503480156200008c57600080fd5b506040518060400160405280601381526020017f52696e676f2042696e676f2041766174617273000000000000000000000000008152506040518060400160405280600581526020017f52494e474f00000000000000000000000000000000000000000000000000000081525081600090816200010a919062000585565b5080600190816200011c919062000585565b5050506200013f620001336200016f60201b60201c565b6200017760201b60201c565b6200016960405180608001604052806052815260200162004d13605291396200023d60201b60201c565b620006ef565b600033905090565b6000600a60009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905081600a60006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508173ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a35050565b6200024d6200016f60201b60201c565b73ffffffffffffffffffffffffffffffffffffffff1662000273620002e160201b60201c565b73ffffffffffffffffffffffffffffffffffffffff1614620002cc576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401620002c390620006cd565b60405180910390fd5b80600b9081620002dd919062000585565b5050565b6000600a60009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b600081519050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b600060028204905060018216806200038d57607f821691505b602082108103620003a357620003a262000345565b5b50919050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b6000600883026200040d7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82620003ce565b620004198683620003ce565b95508019841693508086168417925050509392505050565b6000819050919050565b6000819050919050565b600062000466620004606200045a8462000431565b6200043b565b62000431565b9050919050565b6000819050919050565b620004828362000445565b6200049a62000491826200046d565b848454620003db565b825550505050565b600090565b620004b1620004a2565b620004be81848462000477565b505050565b5b81811015620004e657620004da600082620004a7565b600181019050620004c4565b5050565b601f8211156200053557620004ff81620003a9565b6200050a84620003be565b810160208510156200051a578190505b620005326200052985620003be565b830182620004c3565b50505b505050565b600082821c905092915050565b60006200055a600019846008026200053a565b1980831691505092915050565b600062000575838362000547565b9150826002028217905092915050565b62000590826200030b565b67ffffffffffffffff811115620005ac57620005ab62000316565b5b620005b8825462000374565b620005c5828285620004ea565b600060209050601f831160018114620005fd5760008415620005e8578287015190505b620005f4858262000567565b86555062000664565b601f1984166200060d86620003a9565b60005b82811015620006375784890151825560018201915060208501945060208101905062000610565b8683101562000657578489015162000653601f89168262000547565b8355505b6001600288020188555050505b505050505050565b600082825260208201905092915050565b7f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572600082015250565b6000620006b56020836200066c565b9150620006c2826200067d565b602082019050919050565b60006020820190508181036000830152620006e881620006a6565b9050919050565b61461480620006ff6000396000f3fe60806040526004361061020f5760003560e01c806355f804b311610118578063a22cb465116100a0578063d5abeb011161006f578063d5abeb011461077f578063d936547e146107aa578063da3ef23f146107e7578063e985e9c514610810578063f2fde38b1461084d5761020f565b8063a22cb465146106c5578063b88d4fde146106ee578063c668286214610717578063c87b56dd146107425761020f565b806370a08231116100e757806370a08231146105f2578063715018a61461062f5780637f00c7a6146106465780638da5cb5b1461066f57806395d89b411461069a5761020f565b806355f804b3146105365780635c975abb1461055f5780636352211e1461058a5780636c0360eb146105c75761020f565b80632f745c591161019b57806342842e0e1161016a57806342842e0e14610441578063438b63001461046a57806344a0d68a146104a75780634a4c560d146104d05780634f6ccce7146104f95761020f565b80632f745c59146103b557806330cc7ae0146103f25780633ccfd60b1461041b57806340c10f19146104255761020f565b8063095ea7b3116101e2578063095ea7b3146102e257806313faede61461030b57806318160ddd14610336578063239c70ae1461036157806323b872dd1461038c5761020f565b806301ffc9a71461021457806302329a291461025157806306fdde031461027a578063081812fc146102a5575b600080fd5b34801561022057600080fd5b5061023b60048036038101906102369190612da3565b610876565b6040516102489190612deb565b60405180910390f35b34801561025d57600080fd5b5061027860048036038101906102739190612e32565b6108f0565b005b34801561028657600080fd5b5061028f610989565b60405161029c9190612ef8565b60405180910390f35b3480156102b157600080fd5b506102cc60048036038101906102c79190612f50565b610a1b565b6040516102d99190612fbe565b60405180910390f35b3480156102ee57600080fd5b5061030960048036038101906103049190613005565b610aa0565b005b34801561031757600080fd5b50610320610bb7565b60405161032d9190613054565b60405180910390f35b34801561034257600080fd5b5061034b610bbd565b6040516103589190613054565b60405180910390f35b34801561036d57600080fd5b50610376610bca565b6040516103839190613054565b60405180910390f35b34801561039857600080fd5b506103b360048036038101906103ae919061306f565b610bd0565b005b3480156103c157600080fd5b506103dc60048036038101906103d79190613005565b610c30565b6040516103e99190613054565b60405180910390f35b3480156103fe57600080fd5b50610419600480360381019061041491906130c2565b610cd5565b005b610423610dac565b005b61043f600480360381019061043a9190613005565b610ea8565b005b34801561044d57600080fd5b506104686004803603810190610463919061306f565b610fee565b005b34801561047657600080fd5b50610491600480360381019061048c91906130c2565b61100e565b60405161049e91906131ad565b60405180910390f35b3480156104b357600080fd5b506104ce60048036038101906104c99190612f50565b6110bc565b005b3480156104dc57600080fd5b506104f760048036038101906104f291906130c2565b611142565b005b34801561050557600080fd5b50610520600480360381019061051b9190612f50565b611219565b60405161052d9190613054565b60405180910390f35b34801561054257600080fd5b5061055d60048036038101906105589190613304565b61128a565b005b34801561056b57600080fd5b50610574611319565b6040516105819190612deb565b60405180910390f35b34801561059657600080fd5b506105b160048036038101906105ac9190612f50565b61132c565b6040516105be9190612fbe565b60405180910390f35b3480156105d357600080fd5b506105dc6113dd565b6040516105e99190612ef8565b60405180910390f35b3480156105fe57600080fd5b50610619600480360381019061061491906130c2565b61146b565b6040516106269190613054565b60405180910390f35b34801561063b57600080fd5b50610644611522565b005b34801561065257600080fd5b5061066d60048036038101906106689190612f50565b6115aa565b005b34801561067b57600080fd5b50610684611630565b6040516106919190612fbe565b60405180910390f35b3480156106a657600080fd5b506106af61165a565b6040516106bc9190612ef8565b60405180910390f35b3480156106d157600080fd5b506106ec60048036038101906106e7919061334d565b6116ec565b005b3480156106fa57600080fd5b506107156004803603810190610710919061342e565b611702565b005b34801561072357600080fd5b5061072c611764565b6040516107399190612ef8565b60405180910390f35b34801561074e57600080fd5b5061076960048036038101906107649190612f50565b6117f2565b6040516107769190612ef8565b60405180910390f35b34801561078b57600080fd5b5061079461189c565b6040516107a19190613054565b60405180910390f35b3480156107b657600080fd5b506107d160048036038101906107cc91906130c2565b6118a2565b6040516107de9190612deb565b60405180910390f35b3480156107f357600080fd5b5061080e60048036038101906108099190613304565b6118c2565b005b34801561081c57600080fd5b50610837600480360381019061083291906134b1565b611951565b6040516108449190612deb565b60405180910390f35b34801561085957600080fd5b50610874600480360381019061086f91906130c2565b6119e5565b005b60007f780e9d63000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614806108e957506108e882611adc565b5b9050919050565b6108f8611bbe565b73ffffffffffffffffffffffffffffffffffffffff16610916611630565b73ffffffffffffffffffffffffffffffffffffffff161461096c576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016109639061353d565b60405180910390fd5b80601060006101000a81548160ff02191690831515021790555050565b6060600080546109989061358c565b80601f01602080910402602001604051908101604052809291908181526020018280546109c49061358c565b8015610a115780601f106109e657610100808354040283529160200191610a11565b820191906000526020600020905b8154815290600101906020018083116109f457829003601f168201915b5050505050905090565b6000610a2682611bc6565b610a65576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610a5c9061362f565b60405180910390fd5b6004600083815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050919050565b6000610aab8261132c565b90508073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff1603610b1b576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610b12906136c1565b60405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff16610b3a611bbe565b73ffffffffffffffffffffffffffffffffffffffff161480610b695750610b6881610b63611bbe565b611951565b5b610ba8576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610b9f90613753565b60405180910390fd5b610bb28383611c32565b505050565b600d5481565b6000600880549050905090565b600f5481565b610be1610bdb611bbe565b82611ceb565b610c20576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610c17906137e5565b60405180910390fd5b610c2b838383611dc9565b505050565b6000610c3b8361146b565b8210610c7c576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610c7390613877565b60405180910390fd5b600660008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600083815260200190815260200160002054905092915050565b610cdd611bbe565b73ffffffffffffffffffffffffffffffffffffffff16610cfb611630565b73ffffffffffffffffffffffffffffffffffffffff1614610d51576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610d489061353d565b60405180910390fd5b6000601160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b610db4611bbe565b73ffffffffffffffffffffffffffffffffffffffff16610dd2611630565b73ffffffffffffffffffffffffffffffffffffffff1614610e28576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610e1f9061353d565b60405180910390fd5b6000610e32611630565b73ffffffffffffffffffffffffffffffffffffffff1647604051610e55906138c8565b60006040518083038185875af1925050503d8060008114610e92576040519150601f19603f3d011682016040523d82523d6000602084013e610e97565b606091505b5050905080610ea557600080fd5b50565b6000610eb2610bbd565b9050601060009054906101000a900460ff1615610ece57600080fd5b60008211610edb57600080fd5b600f54821115610eea57600080fd5b600e548282610ef9919061390c565b1115610f0457600080fd5b610f0c611630565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610fb25760011515601160003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16151514610fb15781600d54610fa49190613962565b341015610fb057600080fd5b5b5b6000600190505b828111610fe857610fd5848284610fd0919061390c565b61202f565b8080610fe0906139bc565b915050610fb9565b50505050565b61100983838360405180602001604052806000815250611702565b505050565b6060600061101b8361146b565b905060008167ffffffffffffffff811115611039576110386131d9565b5b6040519080825280602002602001820160405280156110675781602001602082028036833780820191505090505b50905060005b828110156110b15761107f8582610c30565b82828151811061109257611091613a04565b5b60200260200101818152505080806110a9906139bc565b91505061106d565b508092505050919050565b6110c4611bbe565b73ffffffffffffffffffffffffffffffffffffffff166110e2611630565b73ffffffffffffffffffffffffffffffffffffffff1614611138576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161112f9061353d565b60405180910390fd5b80600d8190555050565b61114a611bbe565b73ffffffffffffffffffffffffffffffffffffffff16611168611630565b73ffffffffffffffffffffffffffffffffffffffff16146111be576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016111b59061353d565b60405180910390fd5b6001601160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050565b6000611223610bbd565b8210611264576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161125b90613aa5565b60405180910390fd5b6008828154811061127857611277613a04565b5b90600052602060002001549050919050565b611292611bbe565b73ffffffffffffffffffffffffffffffffffffffff166112b0611630565b73ffffffffffffffffffffffffffffffffffffffff1614611306576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016112fd9061353d565b60405180910390fd5b80600b90816113159190613c71565b5050565b601060009054906101000a900460ff1681565b6000806002600084815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16036113d4576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016113cb90613db5565b60405180910390fd5b80915050919050565b600b80546113ea9061358c565b80601f01602080910402602001604051908101604052809291908181526020018280546114169061358c565b80156114635780601f1061143857610100808354040283529160200191611463565b820191906000526020600020905b81548152906001019060200180831161144657829003601f168201915b505050505081565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16036114db576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016114d290613e47565b60405180910390fd5b600360008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b61152a611bbe565b73ffffffffffffffffffffffffffffffffffffffff16611548611630565b73ffffffffffffffffffffffffffffffffffffffff161461159e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016115959061353d565b60405180910390fd5b6115a8600061204d565b565b6115b2611bbe565b73ffffffffffffffffffffffffffffffffffffffff166115d0611630565b73ffffffffffffffffffffffffffffffffffffffff1614611626576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161161d9061353d565b60405180910390fd5b80600f8190555050565b6000600a60009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6060600180546116699061358c565b80601f01602080910402602001604051908101604052809291908181526020018280546116959061358c565b80156116e25780601f106116b7576101008083540402835291602001916116e2565b820191906000526020600020905b8154815290600101906020018083116116c557829003601f168201915b5050505050905090565b6116fe6116f7611bbe565b8383612113565b5050565b61171361170d611bbe565b83611ceb565b611752576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401611749906137e5565b60405180910390fd5b61175e8484848461227f565b50505050565b600c80546117719061358c565b80601f016020809104026020016040519081016040528092919081815260200182805461179d9061358c565b80156117ea5780601f106117bf576101008083540402835291602001916117ea565b820191906000526020600020905b8154815290600101906020018083116117cd57829003601f168201915b505050505081565b60606117fd82611bc6565b61183c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161183390613ed9565b60405180910390fd5b60006118466122db565b905060008151116118665760405180602001604052806000815250611894565b806118708461236d565b600c60405160200161188493929190613fb8565b6040516020818303038152906040525b915050919050565b600e5481565b60116020528060005260406000206000915054906101000a900460ff1681565b6118ca611bbe565b73ffffffffffffffffffffffffffffffffffffffff166118e8611630565b73ffffffffffffffffffffffffffffffffffffffff161461193e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016119359061353d565b60405180910390fd5b80600c908161194d9190613c71565b5050565b6000600560008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6119ed611bbe565b73ffffffffffffffffffffffffffffffffffffffff16611a0b611630565b73ffffffffffffffffffffffffffffffffffffffff1614611a61576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401611a589061353d565b60405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1603611ad0576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401611ac79061405b565b60405180910390fd5b611ad98161204d565b50565b60007f80ac58cd000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19161480611ba757507f5b5e139f000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916145b80611bb75750611bb6826124cd565b5b9050919050565b600033905090565b60008073ffffffffffffffffffffffffffffffffffffffff166002600084815260200190815260200160002060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614159050919050565b816004600083815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550808273ffffffffffffffffffffffffffffffffffffffff16611ca58361132c565b73ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b92560405160405180910390a45050565b6000611cf682611bc6565b611d35576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401611d2c906140ed565b60405180910390fd5b6000611d408361132c565b90508073ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff161480611daf57508373ffffffffffffffffffffffffffffffffffffffff16611d9784610a1b565b73ffffffffffffffffffffffffffffffffffffffff16145b80611dc05750611dbf8185611951565b5b91505092915050565b8273ffffffffffffffffffffffffffffffffffffffff16611de98261132c565b73ffffffffffffffffffffffffffffffffffffffff1614611e3f576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401611e369061417f565b60405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff1603611eae576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401611ea590614211565b60405180910390fd5b611eb9838383612537565b611ec4600082611c32565b6001600360008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254611f149190614231565b925050819055506001600360008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254611f6b919061390c565b92505081905550816002600083815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550808273ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef60405160405180910390a461202a838383612649565b505050565b61204982826040518060200160405280600081525061264e565b5050565b6000600a60009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905081600a60006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508173ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a35050565b8173ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff1603612181576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401612178906142b1565b60405180910390fd5b80600560008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055508173ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff167f17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31836040516122729190612deb565b60405180910390a3505050565b61228a848484611dc9565b612296848484846126a9565b6122d5576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016122cc90614343565b60405180910390fd5b50505050565b6060600b80546122ea9061358c565b80601f01602080910402602001604051908101604052809291908181526020018280546123169061358c565b80156123635780601f1061233857610100808354040283529160200191612363565b820191906000526020600020905b81548152906001019060200180831161234657829003601f168201915b5050505050905090565b6060600082036123b4576040518060400160405280600181526020017f300000000000000000000000000000000000000000000000000000000000000081525090506124c8565b600082905060005b600082146123e65780806123cf906139bc565b915050600a826123df9190614392565b91506123bc565b60008167ffffffffffffffff811115612402576124016131d9565b5b6040519080825280601f01601f1916602001820160405280156124345781602001600182028036833780820191505090505b5090505b600085146124c15760018261244d9190614231565b9150600a8561245c91906143c3565b6030612468919061390c565b60f81b81838151811061247e5761247d613a04565b5b60200101907effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916908160001a905350600a856124ba9190614392565b9450612438565b8093505050505b919050565b60007f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916149050919050565b612542838383612830565b600073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16036125845761257f81612835565b6125c3565b8173ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16146125c2576125c1838261287e565b5b5b600073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff160361260557612600816129eb565b612644565b8273ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff1614612643576126428282612abc565b5b5b505050565b505050565b6126588383612b3b565b61266560008484846126a9565b6126a4576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161269b90614343565b60405180910390fd5b505050565b60006126ca8473ffffffffffffffffffffffffffffffffffffffff16612d14565b15612823578373ffffffffffffffffffffffffffffffffffffffff1663150b7a026126f3611bbe565b8786866040518563ffffffff1660e01b81526004016127159493929190614449565b6020604051808303816000875af192505050801561275157506040513d601f19601f8201168201806040525081019061274e91906144aa565b60015b6127d3573d8060008114612781576040519150601f19603f3d011682016040523d82523d6000602084013e612786565b606091505b5060008151036127cb576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016127c290614343565b60405180910390fd5b805181602001fd5b63150b7a0260e01b7bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916817bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614915050612828565b600190505b949350505050565b505050565b6008805490506009600083815260200190815260200160002081905550600881908060018154018082558091505060019003906000526020600020016000909190919091505550565b6000600161288b8461146b565b6128959190614231565b905060006007600084815260200190815260200160002054905081811461297a576000600660008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600084815260200190815260200160002054905080600660008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600084815260200190815260200160002081905550816007600083815260200190815260200160002081905550505b6007600084815260200190815260200160002060009055600660008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008381526020019081526020016000206000905550505050565b600060016008805490506129ff9190614231565b9050600060096000848152602001908152602001600020549050600060088381548110612a2f57612a2e613a04565b5b906000526020600020015490508060088381548110612a5157612a50613a04565b5b906000526020600020018190555081600960008381526020019081526020016000208190555060096000858152602001908152602001600020600090556008805480612aa057612a9f6144d7565b5b6001900381819060005260206000200160009055905550505050565b6000612ac78361146b565b905081600660008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600083815260200190815260200160002081905550806007600084815260200190815260200160002081905550505050565b600073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff1603612baa576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401612ba190614552565b60405180910390fd5b612bb381611bc6565b15612bf3576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401612bea906145be565b60405180910390fd5b612bff60008383612537565b6001600360008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000828254612c4f919061390c565b92505081905550816002600083815260200190815260200160002060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550808273ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef60405160405180910390a4612d1060008383612649565b5050565b6000808273ffffffffffffffffffffffffffffffffffffffff163b119050919050565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b612d8081612d4b565b8114612d8b57600080fd5b50565b600081359050612d9d81612d77565b92915050565b600060208284031215612db957612db8612d41565b5b6000612dc784828501612d8e565b91505092915050565b60008115159050919050565b612de581612dd0565b82525050565b6000602082019050612e006000830184612ddc565b92915050565b612e0f81612dd0565b8114612e1a57600080fd5b50565b600081359050612e2c81612e06565b92915050565b600060208284031215612e4857612e47612d41565b5b6000612e5684828501612e1d565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b83811015612e99578082015181840152602081019050612e7e565b83811115612ea8576000848401525b50505050565b6000601f19601f8301169050919050565b6000612eca82612e5f565b612ed48185612e6a565b9350612ee4818560208601612e7b565b612eed81612eae565b840191505092915050565b60006020820190508181036000830152612f128184612ebf565b905092915050565b6000819050919050565b612f2d81612f1a565b8114612f3857600080fd5b50565b600081359050612f4a81612f24565b92915050565b600060208284031215612f6657612f65612d41565b5b6000612f7484828501612f3b565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000612fa882612f7d565b9050919050565b612fb881612f9d565b82525050565b6000602082019050612fd36000830184612faf565b92915050565b612fe281612f9d565b8114612fed57600080fd5b50565b600081359050612fff81612fd9565b92915050565b6000806040838503121561301c5761301b612d41565b5b600061302a85828601612ff0565b925050602061303b85828601612f3b565b9150509250929050565b61304e81612f1a565b82525050565b60006020820190506130696000830184613045565b92915050565b60008060006060848603121561308857613087612d41565b5b600061309686828701612ff0565b93505060206130a786828701612ff0565b92505060406130b886828701612f3b565b9150509250925092565b6000602082840312156130d8576130d7612d41565b5b60006130e684828501612ff0565b91505092915050565b600081519050919050565b600082825260208201905092915050565b6000819050602082019050919050565b61312481612f1a565b82525050565b6000613136838361311b565b60208301905092915050565b6000602082019050919050565b600061315a826130ef565b61316481856130fa565b935061316f8361310b565b8060005b838110156131a0578151613187888261312a565b975061319283613142565b925050600181019050613173565b5085935050505092915050565b600060208201905081810360008301526131c7818461314f565b905092915050565b600080fd5b600080fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b61321182612eae565b810181811067ffffffffffffffff821117156132305761322f6131d9565b5b80604052505050565b6000613243612d37565b905061324f8282613208565b919050565b600067ffffffffffffffff82111561326f5761326e6131d9565b5b61327882612eae565b9050602081019050919050565b82818337600083830152505050565b60006132a76132a284613254565b613239565b9050828152602081018484840111156132c3576132c26131d4565b5b6132ce848285613285565b509392505050565b600082601f8301126132eb576132ea6131cf565b5b81356132fb848260208601613294565b91505092915050565b60006020828403121561331a57613319612d41565b5b600082013567ffffffffffffffff81111561333857613337612d46565b5b613344848285016132d6565b91505092915050565b6000806040838503121561336457613363612d41565b5b600061337285828601612ff0565b925050602061338385828601612e1d565b9150509250929050565b600067ffffffffffffffff8211156133a8576133a76131d9565b5b6133b182612eae565b9050602081019050919050565b60006133d16133cc8461338d565b613239565b9050828152602081018484840111156133ed576133ec6131d4565b5b6133f8848285613285565b509392505050565b600082601f830112613415576134146131cf565b5b81356134258482602086016133be565b91505092915050565b6000806000806080858703121561344857613447612d41565b5b600061345687828801612ff0565b945050602061346787828801612ff0565b935050604061347887828801612f3b565b925050606085013567ffffffffffffffff81111561349957613498612d46565b5b6134a587828801613400565b91505092959194509250565b600080604083850312156134c8576134c7612d41565b5b60006134d685828601612ff0565b92505060206134e785828601612ff0565b9150509250929050565b7f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572600082015250565b6000613527602083612e6a565b9150613532826134f1565b602082019050919050565b600060208201905081810360008301526135568161351a565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b600060028204905060018216806135a457607f821691505b6020821081036135b7576135b661355d565b5b50919050565b7f4552433732313a20617070726f76656420717565727920666f72206e6f6e657860008201527f697374656e7420746f6b656e0000000000000000000000000000000000000000602082015250565b6000613619602c83612e6a565b9150613624826135bd565b604082019050919050565b600060208201905081810360008301526136488161360c565b9050919050565b7f4552433732313a20617070726f76616c20746f2063757272656e74206f776e6560008201527f7200000000000000000000000000000000000000000000000000000000000000602082015250565b60006136ab602183612e6a565b91506136b68261364f565b604082019050919050565b600060208201905081810360008301526136da8161369e565b9050919050565b7f4552433732313a20617070726f76652063616c6c6572206973206e6f74206f7760008201527f6e6572206e6f7220617070726f76656420666f7220616c6c0000000000000000602082015250565b600061373d603883612e6a565b9150613748826136e1565b604082019050919050565b6000602082019050818103600083015261376c81613730565b9050919050565b7f4552433732313a207472616e736665722063616c6c6572206973206e6f74206f60008201527f776e6572206e6f7220617070726f766564000000000000000000000000000000602082015250565b60006137cf603183612e6a565b91506137da82613773565b604082019050919050565b600060208201905081810360008301526137fe816137c2565b9050919050565b7f455243373231456e756d657261626c653a206f776e657220696e646578206f7560008201527f74206f6620626f756e6473000000000000000000000000000000000000000000602082015250565b6000613861602b83612e6a565b915061386c82613805565b604082019050919050565b6000602082019050818103600083015261389081613854565b9050919050565b600081905092915050565b50565b60006138b2600083613897565b91506138bd826138a2565b600082019050919050565b60006138d3826138a5565b9150819050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600061391782612f1a565b915061392283612f1a565b9250827fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff03821115613957576139566138dd565b5b828201905092915050565b600061396d82612f1a565b915061397883612f1a565b9250817fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff04831182151516156139b1576139b06138dd565b5b828202905092915050565b60006139c782612f1a565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82036139f9576139f86138dd565b5b600182019050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603260045260246000fd5b7f455243373231456e756d657261626c653a20676c6f62616c20696e646578206f60008201527f7574206f6620626f756e64730000000000000000000000000000000000000000602082015250565b6000613a8f602c83612e6a565b9150613a9a82613a33565b604082019050919050565b60006020820190508181036000830152613abe81613a82565b9050919050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b600060088302613b277fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82613aea565b613b318683613aea565b95508019841693508086168417925050509392505050565b6000819050919050565b6000613b6e613b69613b6484612f1a565b613b49565b612f1a565b9050919050565b6000819050919050565b613b8883613b53565b613b9c613b9482613b75565b848454613af7565b825550505050565b600090565b613bb1613ba4565b613bbc818484613b7f565b505050565b5b81811015613be057613bd5600082613ba9565b600181019050613bc2565b5050565b601f821115613c2557613bf681613ac5565b613bff84613ada565b81016020851015613c0e578190505b613c22613c1a85613ada565b830182613bc1565b50505b505050565b600082821c905092915050565b6000613c4860001984600802613c2a565b1980831691505092915050565b6000613c618383613c37565b9150826002028217905092915050565b613c7a82612e5f565b67ffffffffffffffff811115613c9357613c926131d9565b5b613c9d825461358c565b613ca8828285613be4565b600060209050601f831160018114613cdb5760008415613cc9578287015190505b613cd38582613c55565b865550613d3b565b601f198416613ce986613ac5565b60005b82811015613d1157848901518255600182019150602085019450602081019050613cec565b86831015613d2e5784890151613d2a601f891682613c37565b8355505b6001600288020188555050505b505050505050565b7f4552433732313a206f776e657220717565727920666f72206e6f6e657869737460008201527f656e7420746f6b656e0000000000000000000000000000000000000000000000602082015250565b6000613d9f602983612e6a565b9150613daa82613d43565b604082019050919050565b60006020820190508181036000830152613dce81613d92565b9050919050565b7f4552433732313a2062616c616e636520717565727920666f7220746865207a6560008201527f726f206164647265737300000000000000000000000000000000000000000000602082015250565b6000613e31602a83612e6a565b9150613e3c82613dd5565b604082019050919050565b60006020820190508181036000830152613e6081613e24565b9050919050565b7f4552433732314d657461646174613a2055524920717565727920666f72206e6f60008201527f6e6578697374656e7420746f6b656e0000000000000000000000000000000000602082015250565b6000613ec3602f83612e6a565b9150613ece82613e67565b604082019050919050565b60006020820190508181036000830152613ef281613eb6565b9050919050565b600081905092915050565b6000613f0f82612e5f565b613f198185613ef9565b9350613f29818560208601612e7b565b80840191505092915050565b60008154613f428161358c565b613f4c8186613ef9565b94506001821660008114613f675760018114613f7c57613faf565b60ff1983168652811515820286019350613faf565b613f8585613ac5565b60005b83811015613fa757815481890152600182019150602081019050613f88565b838801955050505b50505092915050565b6000613fc48286613f04565b9150613fd08285613f04565b9150613fdc8284613f35565b9150819050949350505050565b7f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160008201527f6464726573730000000000000000000000000000000000000000000000000000602082015250565b6000614045602683612e6a565b915061405082613fe9565b604082019050919050565b6000602082019050818103600083015261407481614038565b9050919050565b7f4552433732313a206f70657261746f7220717565727920666f72206e6f6e657860008201527f697374656e7420746f6b656e0000000000000000000000000000000000000000602082015250565b60006140d7602c83612e6a565b91506140e28261407b565b604082019050919050565b60006020820190508181036000830152614106816140ca565b9050919050565b7f4552433732313a207472616e736665722066726f6d20696e636f72726563742060008201527f6f776e6572000000000000000000000000000000000000000000000000000000602082015250565b6000614169602583612e6a565b91506141748261410d565b604082019050919050565b600060208201905081810360008301526141988161415c565b9050919050565b7f4552433732313a207472616e7366657220746f20746865207a65726f2061646460008201527f7265737300000000000000000000000000000000000000000000000000000000602082015250565b60006141fb602483612e6a565b91506142068261419f565b604082019050919050565b6000602082019050818103600083015261422a816141ee565b9050919050565b600061423c82612f1a565b915061424783612f1a565b92508282101561425a576142596138dd565b5b828203905092915050565b7f4552433732313a20617070726f766520746f2063616c6c657200000000000000600082015250565b600061429b601983612e6a565b91506142a682614265565b602082019050919050565b600060208201905081810360008301526142ca8161428e565b9050919050565b7f4552433732313a207472616e7366657220746f206e6f6e20455243373231526560008201527f63656976657220696d706c656d656e7465720000000000000000000000000000602082015250565b600061432d603283612e6a565b9150614338826142d1565b604082019050919050565b6000602082019050818103600083015261435c81614320565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601260045260246000fd5b600061439d82612f1a565b91506143a883612f1a565b9250826143b8576143b7614363565b5b828204905092915050565b60006143ce82612f1a565b91506143d983612f1a565b9250826143e9576143e8614363565b5b828206905092915050565b600081519050919050565b600082825260208201905092915050565b600061441b826143f4565b61442581856143ff565b9350614435818560208601612e7b565b61443e81612eae565b840191505092915050565b600060808201905061445e6000830187612faf565b61446b6020830186612faf565b6144786040830185613045565b818103606083015261448a8184614410565b905095945050505050565b6000815190506144a481612d77565b92915050565b6000602082840312156144c0576144bf612d41565b5b60006144ce84828501614495565b91505092915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603160045260246000fd5b7f4552433732313a206d696e7420746f20746865207a65726f2061646472657373600082015250565b600061453c602083612e6a565b915061454782614506565b602082019050919050565b6000602082019050818103600083015261456b8161452f565b9050919050565b7f4552433732313a20746f6b656e20616c7265616479206d696e74656400000000600082015250565b60006145a8601c83612e6a565b91506145b382614572565b602082019050919050565b600060208201905081810360008301526145d78161459b565b905091905056fea264697066735822122000b13e5fa33a424db14f92bfc0712940f510c42b4a4fc6a88ec5ba72c159433464736f6c634300080f003368747470733a2f2f62616679626569666536356b676a32626d6e756334686b37657a6370756d746e67767779656134687033706a626466636b336f776c6866616a35712e697066732e7733732e6c696e6b2f",compilerVersion:"0.8.15+commit.e14f2714",createdAt:H,updatedAt:H,__v:I,totalSupply:"--",chainId:v},web3contract:k,networks:{"1":{name:"Ethereum Mainnet",currency:t,website:"https:\u002F\u002Fetherscan.io"},"3":{name:"Ropsten Testnet",currency:t,website:"https:\u002F\u002Fropsten.etherscan.io"},"4":{name:"Rinkeby Testnet",currency:t,website:"https:\u002F\u002Frinkeby.etherscan.io"},"56":{name:"Binance Smart Chain Mainnet",currency:J,website:"https:\u002F\u002Fwww.bscscan.com"},"97":{name:"Binance Smart Chain Testnet",currency:J,website:"https:\u002F\u002Ftestnet.bscscan.com\u002F"},"137":{name:"Polygon Mainnet",currency:K,website:"https:\u002F\u002Fpolygonscan.com"},"80001":{name:"Polygon Testnet",currency:K,website:"https:\u002F\u002Fmumbai.polygonscan.com"}},ABI:x,ADDRESS:w,account:k,web3:k,message:e,accounts:[],nextNFT:q,quantity:q,provider:k,web3Modal:k}},error:k,state:{lang:"EN",translate:{genfty:"Genfty","nft generator":"NFT generator",guide:"Guide",pricing:"Pricing",blog:"Blog","generate nft":"Generate NFT",links:"Links","make nft collection":"Make NFT collection","earn with genfty":"Earn with Genfty","learn with genfty":"Learn with Genfty",affiliate:"Affiliate","our blog":"Our blog",newsletter:"Newsletter","keep up with our latest nft news, updates and new features.":"Keep up with our latest NFT news, updates and new features.","subscribe to our newsletter":"Subscribe to our newsletter",subscribe:"Subscribe","contact us":"Contact us","our team is here to answer all your questions":"Our team is here to answer all your questions","feel free to contact us at":"Feel free to contact us at","privacy policy":"Privacy policy","terms & conditions":"Terms & conditions","payment & refund":"Payment & refund","enter your email":"Enter your email","free nft art generator online - nft generator":"Free NFT art generator online - NFT generator","generate 10k nfts collection with free online nft art generator, nothing to install, no code needed, upload to ipfs, no account needed!":"Generate 10k NFTs collection with free online NFT art generator, nothing to install, no code needed, upload to IPFS, no account needed!",nft:"NFT",blockchain:"Blockchain",metaverse:"Metaverse","web 3.0":"Web 3.0",free:"Free","nft generator online to make 10k nft collection":"NFT generator online to make 10k NFT collection","genfty.com is the easiest nft generator to create randomized unique 10k nft collection, upload to ipfs, make smart contract and mint nfts in minutes without any code.":"Genfty.com is the easiest NFT generator to create randomized unique 10k NFT collection, upload to IPFS, make smart contract and mint NFTs in minutes without any code.",watch:"Watch",tutorial:"Tutorial","don't know where to start ?":"Don't know where to start ?","watch tutorial video!":"Watch tutorial video!",features:"Features","our goal is to simplify the process of generating nft collections and make it as easy as possible.":"Our goal is to simplify the process of generating NFT collections and make it as easy as possible.","no code needed":"No code needed","with genfty.com, generate your 10 000 nfts collection and import them to ipfs with the metadata files, without any line of code, all you need is creative layers.":"With Genfty.com, generate your 10 000 NFTs collection and import them to IPFS with the metadata files, without any line of code, all you need is creative layers.","easy and fast to use":"Easy and fast to use","you don&rsquo;t need to code anymore, it&rsquo;s simple, import your layers click generate and your nfts collection is ready to be uploaded to ipfs in seconds.":"You don&rsquo;t need to code anymore, it&rsquo;s simple, import your layers click generate and your NFTs collection is ready to be uploaded to IPFS in seconds.","download zip file":"Download zip file","you can download your nft collection as a zip file with all the metadata json files to your local machine.":"You can download your NFT collection as a zip file with all the metadata JSON files to your local machine.","upload to ipfs":"Upload to IPFS","you can upload your nft collection to ipfs with a click of a button and it will be accessible from anywhere in the world.":"You can upload your NFT collection to IPFS with a click of a button and it will be accessible from anywhere in the world.",metadata:"Metadata","generate your nft collection with metadata compatible with enthereumn, solana and polygon blockchains that you can download or upload directly to ipfs.":"Generate your NFT collection with metadata compatible with enthereumn, solana and polygon blockchains that you can download or upload directly to IPFS.","free smart contract":"Free smart contract","create smart contract with a single click and deploy it on polygon or ethereum blockchain to be able to mint your nfts without writing any line of code.":"Create smart contract with a single click and deploy it on polygon or ethereum blockchain to be able to mint your NFTs without writing any line of code.","free minting page":"Free minting page","page to share your nft collection with others and to mint your nfts on the blockchain and pay minting costs & gas fees":"Page to share your NFT collection with others and to mint your NFTs on the blockchain and pay minting costs & gas fees","backup / restore":"Backup \u002F restore","backup you nft project files to your local machine as a zip file and restore it whenever you want to continue working on it.":"Backup you NFT project files to your local machine as a zip file and restore it whenever you want to continue working on it.","no account needed":"No account needed","start creating your own unique collection and download your nfts without creating an account":"Start creating your own unique collection and download your NFTs without creating an account","generating nft arts was never that easy and fast, we believe that nft arts are the future and our mission in genfty.com is to simplify the nft generating and make it easy for anyone regardless of the skill level -  even the normal persons with no code skills or knowledge":"Generating NFT arts was never that easy and fast, we believe that NFT arts are the future and our mission in Genfty.com is to simplify the NFT generating and make it easy for anyone regardless of the skill level -  even the normal persons with no code skills or knowledge","free nft generator online to create 10k nft collection - nft generator":"Free NFT generator online to create 10k NFT collection - NFT generator","nft art generator to make 10k nft collection for free and no code needed to create nfts, smart contract and minting page supports solana, polygon and ethereum":"NFT art generator to make 10k NFT collection for free and no code needed to create NFTs, smart contract and minting page supports solana, polygon and ethereum","free nft generator online : create 10k nft collection - nft generator":"Free NFT generator online : create 10k NFT collection - NFT generator","the easiest way to create nft collections":"The easiest way to create NFT collections","in genfty.com everyone can create his own and completely unique nfts collection with no duplicated nfts, and get them on a zip with all metadata files needed or import them directly to ipfs.":"In Genfty.com everyone can create his own and completely unique NFTs collection with no duplicated NFTs, and get them on a zip with all metadata files needed or import them directly to IPFS.","get started for free!":"Get started for free!","you can use genfty.com to generate and preview your nfts on the website without paying for it.":"You can use Genfty.com to generate and preview your NFTs on the website without paying for it.","you can buy credits to be able to download your generated nfts or to upload your own nfts to ipfs.":"You can buy credits to be able to download your generated NFTs or to upload your own NFTs to IPFS.","we also offer a free nft smart contract and minting page for your generated nfts and free":"We also offer a free NFT smart contract and minting page for your generated NFTs and free","customer support":"Customer support","free to generate and download 100 nfts for unlimited times":"Free to generate and download 100 NFTs for unlimited times","100 unique nfts":"100 unique NFTs","100 metadata":"100 metadata","realtime preview":"Realtime preview","no watermark":"No watermark","download as a zip file":"Download as a zip file","generate smart contract":"Generate smart contract","rarity feature":"Rarity feature","start for free":"Start for free",pro:"Pro","pay as you go, you pay only when you download or upload to ipfs":"Pay as you go, you pay only when you download or upload to IPFS","first 100 free":"First 100 free","+10k unique nfts":"+10k unique NFTs","+10k metadata":"+10k metadata","try it for free":"Try it for free",premium:"Premium","we will generate, upload to ipfs, generate smart contract":"We will generate, upload to IPFS, generate smart contract","get a quote":"Get a quote","have a question?":"Have a question?","ask us!":"Ask us!",faq:"Faq","we have a lot of questions and answers for you.":"We have a lot of questions and answers for you.","if you have any questions, please feel free to ask us.":"If you have any questions, please feel free to ask us.","is genfty free?":"Is Genfty free?","yes, genfty is free to use with full access to all features, you can make nfts for free but the free version is limited to 100 to download or to upload to ipfs.\u003Cbr\u003Eyou can make as many as you want of nfts and download them by buying genfty credits : $1 for 100 credits.":"Yes, Genfty is free to use with full access to all features, you can make NFTs for free but the free version is limited to 100 to download or to upload to IPFS.\u003Cbr\u003Eyou can make as many as you want of NFTs and download them by buying Genfty credits : $1 for 100 credits.","how to make nft collection?":"How to make NFT collection?","you can make nfts using the \u003Ca class=\"text-blue-600\" href=\"/nft-generator\"\u003Egenfty nft generator\u003C/a\u003E by following the steps below:\u003Cbr\u003E1. make your png traits using any photo editing software\u003Cbr\u003E2. upload your png layers or psd project\u003Cbr\u003E3. set metadata ( names of layers, title and description of collection )\u003Cbr\u003E4. select number of nfts you want to make\u003Cbr\u003E5. click \"generate\" button\u003Cbr\u003E6. download your nfts in zip format or \u003Cb\u003Eupload to ipfs\u003C/b\u003E":"You can make NFTs using the \u003Ca class=\"text-blue-600\" href=\"\u002Fnft-generator\"\u003EGenfty NFT generator\u003C\u002Fa\u003E by following the steps below:\u003Cbr\u003E1. make your PNG traits using any photo editing software\u003Cbr\u003E2. upload your PNG layers or PSD project\u003Cbr\u003E3. set metadata ( names of layers, title and description of collection )\u003Cbr\u003E4. select number of NFTs you want to make\u003Cbr\u003E5. click \"generate\" button\u003Cbr\u003E6. download your NFTs in zip format or \u003Cb\u003Eupload to IPFS\u003C\u002Fb\u003E","how to upload nfts to ipfs?":"How to upload NFTs to IPFS?","after getting your nfts generated, you can upload them to ipfs by upload to ipfs button in the \u003Ca class=\"text-blue-600\" href=\"/nft-generator\"\u003Egenfty nft generator\u003C/a\u003E.":"After getting your NFTs generated, you can upload them to IPFS by upload to IPFS button in the \u003Ca class=\"text-blue-600\" href=\"\u002Fnft-generator\"\u003EGenfty NFT generator\u003C\u002Fa\u003E.","how to generate smart contract?":"How to generate smart contract?","after uploading your nfts to ipfs, you can generate smart contract by clicking \"generate smart contract\" button in the \u003Ca class=\"text-blue-600\" href=\"/nft-generator\"\u003Egenfty nft generator\u003C/a\u003E.":"After uploading your NFTs to IPFS, you can generate smart contract by clicking \"generate smart contract\" button in the \u003Ca class=\"text-blue-600\" href=\"\u002Fnft-generator\"\u003EGenfty NFT generator\u003C\u002Fa\u003E.","how much does it cost to make 10k nfts?":"How much does it cost to make 10k NFTs?","it costs $1.00 per 100 nfts. you can make as many as you want of nfts and download them by buying genfty credits : $1 for 100 credits.\u003Cbr\u003E10k nfts will cost you $99.00 to generate and download as a zip file.":"It costs $1.00 per 100 NFTs. you can make as many as you want of NFTs and download them by buying Genfty credits : $1 for 100 credits.\u003Cbr\u003E10k NFTs will cost you $99.00 to generate and download as a zip file or upload it to IPFS and create smart contract with minting page.",nfts:"NFTs",and:"And",more:"More","defi vs cefi - what&rsquo;s the difference?":"Defi vs cefi - what&rsquo;s the difference?","in the last century, a lot of things and industries have changed and a lot of new technologies and applications have been invented, since the introduction of cryptocurrencies and blockchains the world&rsquo;s finance has also changed to be more flexible and more suitable to the financial mutations around the world":"In the last century, a lot of things and industries have changed and a lot of new technologies and applications have been invented, since the introduction of cryptocurrencies and blockchains the world&rsquo;s finance has also changed to be more flexible and more suitable to the financial mutations around the world","what is ipfs and how it works":"What is IPFS and how it works","while you&rsquo;re navigating on the web ad reading about metaverse, nfts, or web 3.0 you must have heard about ipfs (interplanetary file system)  well after reading this article you will know everything you need about ipfs and how does it work.":"While you&rsquo;re navigating on the web ad reading about metaverse, NFTs, or web 3.0 you must have heard about IPFS (interplanetary file system)  well after reading this article you will know everything you need about IPFS and how does it work.","best nft artists to hire on fiverr":"Best NFT artists to hire on fiverr","this is your chance to become a millionaire!&nbsp;but the question is do you have the skills to design your artworks by yourself and do the code part to generate them and then sell them on opensea?":"This is your chance to become a millionaire!&nbsp;but the question is do you have the skills to design your artworks by yourself and do the code part to generate them and then sell them on Opensea?","best nft maker free online":"Best NFT maker free online","with the best free nft art maker online you don't need any software, coding skills or github repos, all will done with only clicks.":"With the best free NFT art maker online you don't need any software, coding skills or github repos, all will done with only clicks.","how to add polygon test network to metamask":"How to add polygon test network to metamask","before you get to use our app on polygon with real funds, we&rsquo;ve deployed our app on mumbai testnet to allow you to explore pods&rsquo; app in polygon testnet space.":"Before you get to use our app on polygon with real funds, we&rsquo;ve deployed our app on mumbai testnet to allow you to explore pods&rsquo; app in polygon testnet space.","what is web 3.0 and why it matters":"What is web 3.0 and why it matters","the next internet revolution is in the works, and it intends to give users more control over digital content. web 3.0, which will be based on blockchain (the technology that underpins bitcoin and other cryptocurrencies)":"The next internet revolution is in the works, and it intends to give users more control over digital content. web 3.0, which will be based on blockchain (the technology that underpins bitcoin and other cryptocurrencies)","what to learn more about nfts?":"What to learn more about NFTs?","the ultimate guide to nfts":"The ultimate guide to NFTs","nft generator : all in one nft generator - no code":"NFT generator : all in one NFT generator - no code","generate 10,000 unique nft collection, upload to ipfs, make smart contract for ethereum or polygon blockchain, mint nfts in one place for free and no-code":"Generate 10,000 unique NFT collection, upload to IPFS, make smart contract for ethereum or polygon blockchain, mint NFTs in one place for free and no-code",generate:"Generate",preview:"Preview",ipfs:"IPFS",contract:"Contract",mint:"Mint","free demo":"Free demo","upload psd":"Upload PSD",restore:"Restore",backup:"Backup","delete all":"Delete all","add images":"Add images","click here":"Click here","to add images":"To add images","add new group":"Add new group","start with demo or watch tutorial video":"Start with demo or watch tutorial video","start with demo":"Start with demo","watch tutorial video":"Watch tutorial video","add your traits and click play":"Add your traits and click play",dimensions:"Dimensions","nfts to generate":"NFTs to generate","you can generate up to":"You can generate up to","enable rarity":"Enable rarity","metadata preview":"Metadata preview","no traits added":"No traits added","add traits to preview metadata":"Add traits to preview metadata","nft generator - all in one no code nft generator":"NFT generator - all in one no code NFT generator","demo :: loading traits":"Demo :: loading traits","preparing traits...":"Preparing traits...","this may take a while depending on your computer's performance and the number of nfts you want to generate.":"This may take a while depending on your computer's performance and the number of NFTs you want to generate.","0.00 seconds":"0.00 seconds","collection size : 0.00mb":"Collection size : 0.00mb","nfts generated.":"NFTs generated.","please wait...":"Please wait...",back:"Back",name:"Name","name of the asset. displayed in the grid and single nft view.":"Name of the asset. displayed in the grid and single NFT view.",description:"Description","human readable description of the asset.":"Human readable description of the asset.","collection name":"Collection name","name of the collection":"Name of the collection","collection family":"Collection family","represents the larger set of nfts your asset can belong to, in the case you are making multiple variations on a theme. it should always be a unique identifier of your whole project and never a general term like 'cars', 'art' or similar.":"Represents the larger set of NFTs your asset can belong to, in the case you are making multiple variations on a theme. it should always be a unique identifier of your whole project and never a general term like 'cars', 'art' or similar.",symbol:"Symbol","symbol of the asset.":"Symbol of the asset.",creators:"Creators",wallet:"Wallet",shares:"Shares","add creator":"Add creator","public key of each creator. shown in the single nft view, resolved to twitter handles if they are connected via solana name service.":"Public key of each creator. shown in the single NFT view, resolved to twitter handles if they are connected via solana name service.","seller fee basis points":"Seller fee basis points","royalties percentage awarded to creators. shown as a percentage received by each co-creator.":"Royalties percentage awarded to creators. shown as a percentage received by each co-creator.","start index":"Start index","0 for solana, 1 for ethereum or similar.":"0 for solana, 1 for ethereum or similar.","generating nfts...":"Generating NFTs...","owned by":"Owned by",you:"You",download:"Download","you can download up to 100 nfts for free.":"You can download up to 100 NFTs for free.","download collection":"Download collection","go to next step to upload your files to ipfs":"Go to next step to upload your files to IPFS","upload files to ipfs":"Upload files to IPFS",images:"Images","json files":"JSON files","start uploading":"Start uploading","public data":"Public data","all data uploaded to ipfs is available to anyone who requests it using the correct cid. do not store any private or sensitive information in an unencrypted form using ipfs.":"All data uploaded to IPFS is available to anyone who requests it using the correct CID. do not store any private or sensitive information in an unencrypted form using IPFS.","permanent data":"Permanent data","deleting files from the genfty site's files page will remove them from the file listing for your account, but that doesn't prevent nodes on the decentralized storage network from retaining copies of the data indefinitely. do not use ipfs for data that may need to be permanently deleted in the future.":"Deleting files from the Genfty site's files page will remove them from the file listing for your account, but that doesn't prevent nodes on the decentralized storage network from retaining copies of the data indefinitely. do not use IPFS for data that may need to be permanently deleted in the future.","uploaded to ipfs successfully!":"Uploaded to IPFS successfully!","your nfts are now available on ipfs":"Your NFTs are now available on IPFS","first and last nft images:":"First and last NFT images:","first and last metadata files:":"First and last metadata files:","smart contract":"Smart contract","ipfs cid":"IPFS CID","this is the cid of the metadata directory on ipfs. it is used to generate the contract address.":"This is the CID of the metadata directory on IPFS. it is used to generate the contract address.","collaction name":"Collaction name","collection symbol":"Collection symbol","minting cost":"Minting cost","the cost of minting a new token : the owner and whitelisted addresses will not be charged.":"The cost of minting a new token : the owner and whitelisted addresses will not be charged.","max supply":"Max supply","the maximum number of tokens that can be minted.":"The maximum number of tokens that can be minted.","max mint amount":"Max mint amount","the maximum amount of tokens that can be minted at once.":"The maximum amount of tokens that can be minted at once.","your wallet is not connected":"Your wallet is not connected","connect wallet":"Connect wallet","deployed contract":"Deployed contract","no contract deployed":"No contract deployed","install wallet extension":"Install wallet extension","you'll need to install the wallet extension to be able to deploy the smart contract,":"You'll need to install the wallet extension to be able to deploy the smart contract,","download metamask":"Download metamask","or download the contract source code and use it to deploy the contract on":"Or download the contract source code and use it to deploy the contract on","connect your wallet":"Connect your wallet","connect your wallet to genfty to be able to deploy the smart contract or use":"Connect your wallet to Genfty to be able to deploy the smart contract or use","to deploy the contract.":"To deploy the contract.","add network":"Add network","you can add polygon mainnet or testnet directly using the following buttons:":"You can add polygon mainnet or testnet directly using the following buttons:","add polygon testnet":"Add polygon testnet","add polygon mainnet":"Add polygon mainnet","deploy contract":"Deploy contract","you can deploy the smart contract by clicking on":"You can deploy the smart contract by clicking on",button:"Button","you'll need to pay for the gas cost of the transaction but you can deploy the contract without paying real coins by using testnet network instead of mainnet.":"You'll need to pay for the gas cost of the transaction but you can deploy the contract without paying real coins by using testnet network instead of mainnet.","verify & publish contract":"Verify & publish contract","source code verification provides transparency for users interacting with smart contracts.":"Source code verification provides transparency for users interacting with smart contracts.","you can verify & the contract based on the network you are using.":"You can verify & the contract based on the network you are using.","deploy smart contract":"Deploy smart contract","this action cannot be undone.":"This action cannot be undone.","compiling...":"Compiling...","deploying...":"Deploying...","waiting for address...":"Waiting for address...","deploy another smart contract?":"Deploy another smart contract?","show deployed contracts?":"Show deployed contracts?","by verifying and publishing your contract, you'll be able to mint your nfts directly from":"By verifying and publishing your contract, you'll be able to mint your NFTs directly from","verify & publish":"Verify & publish","view on":"View on",website:"Website","minted of":"Minted of",output:"Output",feedback:"Feedback","congratulations!":"Congratulations!","you have successfully created your own nft collection with genfty.com":"You have successfully created your own NFT collection with Genfty.com","follow us!":"Follow us!","we are on social media, so you can follow us to keep up with the latest news and updates.":"We are on social media, so you can follow us to keep up with the latest news and updates.","leave a feedback!":"Leave a feedback!","we are always looking for feedback and suggestions to improve our service. please leave us a feedback.":"We are always looking for feedback and suggestions to improve our service. please leave us a feedback.",send:"Send","thank you!":"Thank you!","we will review your feedback and get back to you as soon as possible.":"We will review your feedback and get back to you as soon as possible.","back to previous step":"Back to previous step","get free test tokens":"Get free test tokens",credits:"Credits","add credits":"Add credits",clicks:"Clicks","get more clicks and more sales with genfty.com by referring your friends.":"Get more clicks and more sales with Genfty.com by referring your friends.","you can get your money when you reach $70":"You can get your money when you reach $70",logout:"Logout","payments list":"Payments list","add payment":"Add payment",created:"Created",validate:"Validate","ipfs files list":"IPFS files list",items:"Items","smart contracts":"Smart contracts","view collection":"View collection","download source":"Download source","select number of credits you want to buy":"Select number of credits you want to buy",suggestions:"Suggestions",with:"With","you can generate":"You can generate","nfts as a zip file":"NFTs as a zip file","or generate and":"Or generate and",upload:"Upload","nfts to ipfs":"NFTs to IPFS","you'll also get a free smart contract generated for your collection":"You'll also get a free smart contract generated for your collection","unit price":"Unit price",vat:"Vat","total to pay":"Total to pay","not now":"Not now","email sent":"Email sent","your login link is successfully sent to your email":"Your login link is successfully sent to your email","check your email":"Check your email",or:"Or","create account":"Create account",email:"Email",password:"Password","i agree to the":"I agree to the",terms:"Terms",privacy:"Privacy",login:"Login","get a login link via email?":"Get a login link via email?","create new account":"Create new account",view:"View","make contract":"Make contract",completed:"Completed",print:"Print","pricing - nft generator":"Pricing - NFT generator","generate 10k nfts and upload to ipfs for only $99 and get free smart contract and minting page compatible with solana, polygon ethereum and more...":"Generate 10k NFTs and upload to IPFS for only $99 and get free smart contract and minting page compatible with solana, polygon ethereum and more...","we also offer a free nft smart contract for your generated nfts and free":"We also offer a free NFT smart contract for your generated NFTs and free","pricing calculator":"Pricing calculator","we offer a pricing calculator to help you estimate the cost of your download or upload to ipfs.":"We offer a pricing calculator to help you estimate the cost of your download or upload to IPFS.","you can":"You can","for a free estimate or for a custom quote.":"For a free estimate or for a custom quote.","you can use credits to download generated nfts or to upload directly to ipfs.":"You can use credits to download generated NFTs or to upload directly to IPFS.","credits you can download":"Credits you can download","generated nfts or upload":"Generated NFTs or upload","nfts to ipfs.":"NFTs to IPFS.",item:"Item",price:"Price",quantity:"Quantity",total:"Total","100 genfty.com credits":"100 Genfty.com credits","$1 per 100 credits":"$1 per 100 credits","$1/100 credits":"$1\u002F100 credits","genfty.com is the easiest way to start generating randomized unique 10k nfts collections in seconds without any code.":"Genfty.com is the easiest way to start generating randomized unique 10k NFTs collections in seconds without any code.","/nft-generator":"\u002Fnft-generator","/pricing":"\u002Fpricing","/contact":"\u002Fcontact","/":L,"genfty support team":"Genfty support team","hi there! it's nice to see you with us.":"Hi there! it's nice to see you with us.","how may we help today?":"How may we help today?",continue:"Continue","enter your message here":"Enter your message here","make nft":"Make NFT","no-code":"No-Code","creating an nft was never that easier!":"Creating an NFT was never that easier!","create a 10k nfts collection in a few minutes with no code or any technical experience.":"Create a 10K NFTs collection in a few minutes with no code or any technical experience.","we are offering the best nft tools to create and generate your nfts, upload them to the ipfs, make smart contracts, and mint your nfts to any blockchain or marketplace.":"We are offering the best NFT tools to create and generate your NFTs, upload them to the IPFS, make smart contracts, and mint your NFTs to any blockchain or marketplace.","nft collection":"NFT collection","genfty automatically adjusts your metadata files with png files, so you can easily download your nfts as a zip file to your local device after adjusting the rarity of layers, metadata attributes, collection owners, and royalty fee.":"Genfty automatically adjusts your metadata files with PNG files, so you can easily download your NFTs as a zip file to your local device after adjusting the rarity of layers, metadata attributes, collection owners, and royalty fee.","ipfs storage for nft collection":"IPFS Storage For NFT Collection","store your nfts on the ipfs with a single click to make your nfts available publicly to anyone who requests it using the correct cid that you'll get after uploading your nft collection.":"Store your NFTs on the IPFS with a single click to make your NFTs available publicly to anyone who requests it using the correct CID that you'll get after uploading your NFT collection.","create nft":"Create NFT",optimized:"Optimized","we offer a free smart contract for our customers, you just need to set your collection name and symbol to start minting your nfts to any blockchain you want to use for your collection and get a free minting page to share it with your audience.":"We offer a free smart contract for our customers, you just need to set your collection name and symbol to start minting your NFTs to any blockchain you want to use for your collection and get a free minting page to share it with your audience.","make smart contract":"Make Smart Contract","most of blockchains are supported":"Most of Blockchains are Supported","generate once and deploy to multiple blockchains from once place.":"Generate once and deploy to multiple blockchains from once place.","list of supported and recommended chains :":"List of supported and recommended chains :","simple pricing":"Simple Pricing","generate your 10k nfts collection with no hidden or extra fees.":"Generate your 10K NFTs collection with no hidden or extra fees.","generate unlimited nfts collection":"Generate unlimited NFTs collection","generate unlimited nfts":"Generate unlimited NFTs","rarity & metadata":"Rarity & Metadata","backup & restore":"Backup & Restore","download preview files":"Download preview files","psd project support":"PSD Project support","upload up 100 nft to ipfs":"Upload up 100 NFT to IPFS","download 100 nfts":"Download 100 NFTs","free optimized smart contract":"Free Optimized Smart Contract","smart contract erc-721":"Smart Contract ERC-721","no hidden fees":"No Hidden Fees","no-code smart contract":"No-Code Smart Contract","+10 supported chains":"+10 Supported chains",ethereum:"Ethereum",polygin:"Polygin",avalanche:"Avalanche","binance bsc":"Binance BSC",dogechain:"Dogechain","fantom...":"Fantom...","start with smart contract":"Start With Smart Contract","free public minting page":"Free Public Minting Page","no-code minting page":"No-Code Minting Page","no subscription":"No subscription","friendly ui":"Friendly UI","get free minting page":"Get Free Minting Page","pay as you go":"Pay As You Go","generate and launch nft collection":"Generate and launch NFT collection","all previous fatures":"All previous fatures","ipfs storage 1 nft = 1 credit":"IPFS Storage 1 NFT = 1 Credit","download full collection":"Download Full Collection","free 100 creadits":"Free 100 Creadits","get free 100 credits":"Get free 100 Credits","already have nft collection files?":"Already have nft collection files?","the zip file should contain \"metadata\" and \"images\" folders":"The zip file should contain \"metadata\" and \"images\" folders","upload nfts zip file":"Upload NFTs zip file","if you set it to 0 any one will be able to mint your nfts for free.":"If you set it to 0 any one will be able to mint your NFTs for free.","photo to anime":"Photo to anime","find nft designer":"Find NFT Designer","convert photo to anime using ai?":"Convert photo to anime using AI?","try photo to anime using ai?":"Try photo to anime using AI?"},translateErrors:{},auth:k,showVideoModal:j,showCharge:j,showLogin:j,showFiverr:j,fireApp:k,uid:k,showChat:j,newMessage:I,gclid:u,fbclid:u,source:u},serverRendered:d,routePath:"\u002Fcollection\u002F0x3aC22795304A27edb04Cfe2475DCEf0c5C8B5539",config:{_app:{basePath:L,assetsPath:"\u002F_nuxt\u002F",cdnURL:k}}}}("address","uint256","function",true,"","view","nonpayable","bool","string",false,null,"tokenId","owner","to","event","from",1,"approved","operator","ETH",void 0,44,"0x3aC22795304A27edb04Cfe2475DCEf0c5C8B5539",Array(41),"constructor","newOwner","payable","_user","safeTransferFrom","bytes","bytes4","index","uint256[]","2023-03-19T08:27:57.763Z",0,"BNB","MATIC","\u002F"));</script><script src="js/_nuxt-608d9f7.js" defer></script><script src="js/_nuxt-74d72fc.js" defer></script><script src="js/_nuxt-bd3a776.js" defer></script><script src="js/_nuxt-af9d110.js" defer></script><script src="js/_nuxt-b8dccb2.js" defer></script><script src="js/_nuxt-15d7c06.js" defer></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7aa614b9bf8330be","version":"2023.2.0","r":1,"token":"87ce58a6d5eb4ebea32a430056a4010b","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
